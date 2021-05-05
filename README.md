@@ -19,7 +19,7 @@
 
 ##  <a href="https://docs.google.com/document/d/1yplI2Vj48vTDFZaDEuXqQQyjqGCVGYa_hVvIWOwxRPc/edit?usp=sharin">Software Requirement Link </a>
 
-##  <a href="https://app.diagrams.net/#G18vgiEZPhBq5R7tyXKmE9cJReen30lvT3"> User Stories Link </a>
+
 
 
 ![image](https://user-images.githubusercontent.com/51326421/117193446-11b7d400-ae0d-11eb-91ce-4e5de00501ef.png)
@@ -29,12 +29,16 @@
 
 ![image](https://user-images.githubusercontent.com/51326421/117194017-c7832280-ae0d-11eb-9224-ef1e8fb854ac.png)
 
-
-
+# User Stories
+##  <a href="https://app.diagrams.net/#G18vgiEZPhBq5R7tyXKmE9cJReen30lvT3"> User Stories Link </a>
+![image](https://user-images.githubusercontent.com/51326421/117197278-d1a72000-ae11-11eb-8137-32e385b20a92.png)
 
 
 # Twitter Clone: Wireframe (TODO)
 ##  <a href="#"> Wireframe Link(TODO) </a>
+
+
+
 
 
 
