@@ -4,20 +4,28 @@
 
 
 
-# My Blog Software Requirements
-https://docs.google.com/document/d/1lZvacY90Yo19QcnJxRJyy1AAZkTi0Vi5qXHTtptqAiU/edit#heading=h.o5cllxjlz2l1
+# Twitter Clone Software Requirements
 
-![image](https://user-images.githubusercontent.com/51326421/111891042-f857f580-8a21-11eb-8bb9-310f0c666f91.png)
+https://docs.google.com/document/d/1yplI2Vj48vTDFZaDEuXqQQyjqGCVGYa_hVvIWOwxRPc/edit?usp=sharing
+
+
+![image](https://user-images.githubusercontent.com/51326421/117192641-2cd61400-ae0c-11eb-99f9-7f4539783b7f.png)
+
+# Goals and User Stories
+![image](https://user-images.githubusercontent.com/51326421/117192641-2cd61400-ae0c-11eb-99f9-7f4539783b7f.png)
+
 
 # Business Requirements
 
-![image](https://user-images.githubusercontent.com/51326421/111891112-b4192500-8a22-11eb-92e9-20854d336b57.png)
+![image](https://user-images.githubusercontent.com/51326421/117192361-d79a0280-ae0b-11eb-8a32-2cd317da64b4.png)
+
 
 
 
 # Technical Requirements
 
-![image](https://user-images.githubusercontent.com/51326421/117191659-04014f00-ae0b-11eb-841b-1828f446a3bc.png)
+![image](https://user-images.githubusercontent.com/51326421/117192247-afaa9f00-ae0b-11eb-857d-8998701abf64.png)
+
 
 
 
