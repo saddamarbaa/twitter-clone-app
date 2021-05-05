@@ -2,10 +2,10 @@
 ==> Building Twitter Clone using Node.js and Vanilla javascript
 
 
-#  <a href="#">LIVE DEMO(TODO)</a>
+#  <a href="">LIVE DEMO(TODO)</a>
 
 
-#  <a href="#">SEE MY twitter-clone API REPO (TODO)</a>
+#  <a href="">SEE MY twitter-clone API REPO (TODO)</a>
  
  
  # <a href="#>LIVE API(TODO)</a>
@@ -19,7 +19,7 @@
 
 ##  <a href="https://docs.google.com/document/d/1yplI2Vj48vTDFZaDEuXqQQyjqGCVGYa_hVvIWOwxRPc/edit?usp=sharin">Software Requirement Link </a>
 
-##  <a href="https://docs.google.com/document/d/1yplI2Vj48vTDFZaDEuXqQQyjqGCVGYa_hVvIWOwxRPc/edit?usp=sharin"> User Stories Link </a>
+##  <a href="https://app.diagrams.net/#G18vgiEZPhBq5R7tyXKmE9cJReen30lvT3"> User Stories Link </a>
 
 
 ![image](https://user-images.githubusercontent.com/51326421/117193446-11b7d400-ae0d-11eb-91ce-4e5de00501ef.png)
