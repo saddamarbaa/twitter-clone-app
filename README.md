@@ -8,7 +8,7 @@
 #  <a href="">SEE MY twitter-clone API REPO (TODO)</a>
  
  
- # <a href="#>LIVE API(TODO)</a>
+ # <a href="#">LIVE API(TODO)</a>
 
 
 #  Testing Email:      TODO
@@ -34,7 +34,7 @@
 
 
 # Twitter Clone: Wireframe (TODO)
-##  <a href="https://docs.google.com/document/d/1yplI2Vj48vTDFZaDEuXqQQyjqGCVGYa_hVvIWOwxRPc/edit?usp=sharin"> Wireframe Link(TODO) </a>
+##  <a href="#"> Wireframe Link(TODO) </a>
 
 
 
