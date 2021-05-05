@@ -5,8 +5,8 @@
 
 
 # Twitter Clone Software Requirements
+![image](https://user-images.githubusercontent.com/51326421/117193446-11b7d400-ae0d-11eb-91ce-4e5de00501ef.png)
 
-https://docs.google.com/document/d/1yplI2Vj48vTDFZaDEuXqQQyjqGCVGYa_hVvIWOwxRPc/edit?usp=sharing
 
 
 ![image](https://user-images.githubusercontent.com/51326421/117192641-2cd61400-ae0c-11eb-99f9-7f4539783b7f.png)
