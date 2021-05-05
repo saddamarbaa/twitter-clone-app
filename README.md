@@ -9,7 +9,6 @@
 
 
 
-![image](https://user-images.githubusercontent.com/51326421/117192641-2cd61400-ae0c-11eb-99f9-7f4539783b7f.png)
 
 ![image](https://user-images.githubusercontent.com/51326421/117193675-5c395080-ae0d-11eb-833d-8124a347c5a8.png)
 
