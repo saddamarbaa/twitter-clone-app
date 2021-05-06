@@ -34,8 +34,11 @@
 ![image](https://user-images.githubusercontent.com/51326421/117197278-d1a72000-ae11-11eb-8137-32e385b20a92.png)
 
 
-# Twitter Clone: Wireframe (TODO)
-##  <a href="#"> Wireframe Link(TODO) </a>
+# Twitter Clone: Wireframe 
+##  <a href="https://app.diagrams.net/#G1rC62Py6RQE0HrLCQAtIeGhmjKwcM0xJ7"> Wireframe Link </a>
+
+![image](https://user-images.githubusercontent.com/51326421/117250912-1eb8df80-ae6e-11eb-8536-0532181df621.png)
+
 
 
 
