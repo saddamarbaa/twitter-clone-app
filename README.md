@@ -30,6 +30,9 @@
 
 ![image](https://user-images.githubusercontent.com/51326421/117194017-c7832280-ae0d-11eb-9224-ef1e8fb854ac.png)
 
+![image](https://user-images.githubusercontent.com/51326421/117438465-c829cf00-af5b-11eb-9bbb-28471596a1d4.png)
+
+
 # User Stories
 ##  <a href="https://app.diagrams.net/#G18vgiEZPhBq5R7tyXKmE9cJReen30lvT3"> User Stories Link </a>
 ![image](https://user-images.githubusercontent.com/51326421/117197278-d1a72000-ae11-11eb-8137-32e385b20a92.png)
