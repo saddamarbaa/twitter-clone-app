@@ -3,7 +3,7 @@
 
 # <a href="https://twitter-clone-saddam.netlify.app/">Live Demo (The project is not been completed yet)</a>
  
-#  <a href="https://saddamarbaa.github.io/twitter-clone/">GitHub PAGES DEMO (The project is not been completed yet)</a>
+#  <a href="https://saddamarbaa.github.io/twitter-clone-app/">GitHub PAGES DEMO (The project is not been completed yet)</a>
 
 
 #  <a href="">SEE MY twitter-clone API REPO (TODO)</a>
@@ -28,9 +28,14 @@
 
 ![image](https://user-images.githubusercontent.com/51326421/117193675-5c395080-ae0d-11eb-833d-8124a347c5a8.png)
 
-![image](https://user-images.githubusercontent.com/51326421/117194017-c7832280-ae0d-11eb-9224-ef1e8fb854ac.png)
 
-# User Stories
+![image](https://user-images.githubusercontent.com/51326421/117438465-c829cf00-af5b-11eb-9bbb-28471596a1d4.png)
+
+![image](https://user-images.githubusercontent.com/51326421/117438769-32427400-af5c-11eb-9670-52735790dd34.png)
+
+
+
+# User Stories(Swim Lane )
 ##  <a href="https://app.diagrams.net/#G18vgiEZPhBq5R7tyXKmE9cJReen30lvT3"> User Stories Link </a>
 ![image](https://user-images.githubusercontent.com/51326421/117197278-d1a72000-ae11-11eb-8137-32e385b20a92.png)
 
