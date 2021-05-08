@@ -43,4 +43,6 @@ const buildTweets = (tweets, nextPage) => {};
 const buildImages = (mediaList) => {};
 
 // Build HTML for Tweets Video
-const buildVideo = (mediaList) => {};
+const buildVideo = (mediaList) => {
+
+};

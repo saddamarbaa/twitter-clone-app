@@ -65,6 +65,7 @@ p {
 	padding-right: var(--space16);
 	margin-left: auto;
 	margin-right: auto;
+	background: grey;
 }
 
 /* Apply styles starting from Small devices (landscape phones, 576px ) and up to Medium devices (tablets, 768px) */
@@ -73,32 +74,109 @@ p {
 
 /* Apply styles starting from medium devices(tablets, 768px) and up to Large devices (desktops, 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-	.container {
+	/* .container {
 		width: 750px;
-	}
+	} */
 }
 
 /* Apply styles starting from Large devices (desktops, 992px) and up to X-Large devices (large desktops, 1200px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-	.container {
+	/* .container {
 		width: 970px;
-	}
+	} */
 }
 
 /* Apply styles starting from X-Large devices (large desktops, 1200px ) and up to XX-Large devices */
 @media (min-width: 1200px) {
-	.container {
+	/* .container {
 		width: 1170px;
-	}
+	} */
 }
 /********** End global rules **********/
 
-/********** Start Header Section **********/
+/********** grid container **********/
+.grid-container {
+	display: grid;
+	grid-template-columns: 150px 2.5fr 2fr;
+	background: lightblue;
+	width: 100%;
+	height: 100vh;
+}
 
-/********** End Header Section **********/
+@media (max-width: 767px) {
+	.grid-container {
+		grid-template-columns: 200px 1fr;
+	}
+}
 
-/********** Start components **********/
-/********** End components **********/
+@media (max-width: 576px) {
+	.grid-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+/********** main container **********/
+.grid-container .tweets-main-wrapper {
+	display: flex;
+	flex-direction: column;
+	background: blue;
+}
+
+.grid-container .tweets-main-wrapper .tweets-search-container {
+	height: 80px;
+	margin: 20px;
+	background: rgb(2, 0, 128);
+}
+
+.grid-container .tweets-main-wrapper .tweets-list-container {
+	height: 500px;
+	margin: 20px;
+	background: green;
+}
+
+.grid-container .tweets-main-wrapper .tweets-list-container .tweet {
+	display: flex;
+	flex-direction: column;
+	height: 100px;
+	background: white;
+	margin: 10px;
+}
+
+/********** left sidebar **********/
+.grid-container .navigation-leftSidebar-wrapper {
+	background: red;
+}
+
+@media (max-width: 767px) {
+	.navigation-leftSidebar-wrapper {
+		display: none;
+	}
+}
+
+@media (max-width: 576px) {
+	.grid-container .navigation-leftSidebar-wrapper {
+		display: none;
+	}
+}
+
+/********** right sidebar **********/
+.grid-container .tweets-rightSidebar-wrapper {
+	display: flex;
+	background: yellow;
+}
+
+.grid-container .tweets-rightSidebar-wrapper .tweet-sidebar {
+	width: 200px;
+	height: 500px;
+	margin: 20px;
+	background: white;
+}
+
+@media (max-width: 576px) {
+	.grid-container .tweets-rightSidebar-wrapper {
+		display: none;
+	}
+}
 
 /********** Start Scroll Top **********/
 .back-to-top {
@@ -110,10 +188,10 @@ p {
 	height: var(--space40);
 	background: var(--main-color);
 	border-radius: var(--space50);
-	-webkit-border-radius: var(--space50);
-	-moz-border-radius: var(--space50);
-	-ms-border-radius: var(--space50);
-	-o-border-radius: var(--space50);
+	-webkit-border-radius: ;
+	-moz-border-radius: ;
+	-ms-border-radius: ;
+	-o-border-radius: ;
 	border: 0;
 	outline: 0;
 	display: flex;
