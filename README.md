@@ -46,9 +46,9 @@
 ![image](https://user-images.githubusercontent.com/51326421/117250912-1eb8df80-ae6e-11eb-8536-0532181df621.png)
 
 
-
-
-
+# Twitter Clone: Mockup 
+##  <a href="https://app.diagrams.net/#G1rC62Py6RQE0HrLCQAtIeGhmjKwcM0xJ7"> Figma Link </a>
+ 
 
 
 # responsive on large screens(Home Page) (TODO)
