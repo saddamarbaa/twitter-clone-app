@@ -47,7 +47,7 @@
 
 
 # Twitter Clone: Mockup 
-##  <a href="https://app.diagrams.net/#G1rC62Py6RQE0HrLCQAtIeGhmjKwcM0xJ7"> Figma Link </a>
+##  <a href="https://www.figma.com/file/KaZX9z3aqQDHwPSWPK4bSo/Twitter?node-id=0%3A1"> Figma Link </a>
  
 
 
