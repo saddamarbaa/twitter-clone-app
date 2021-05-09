@@ -8,12 +8,12 @@
 
 /***** Start variables ********/
 :root {
-	--main-color: #100f39;
-	--secondary-color: #8483e0;
-	--section-background: #f2f7fa;
+	--blue: #1da1f2;
+	--black: #0f0f11;
+	--dark-Gray: #657786;
+	--light-Gray: #e1e8ed;
 	--white: #fff;
-	--black: #000;
-	--grey7: #777;
+
 	--space16: 16px;
 	--space20: 20px;
 	--space25: 25px;
@@ -49,7 +49,8 @@ html {
 }
 
 body {
-	font-family: "Open Sans", sans-serif; /* Google Web Fonts */
+	font-family: "Roboto, Helvetica, Arial, sans-serif"; /* Google Web Fonts */
+	background: var(--black);
 }
 
 ul {
@@ -65,39 +66,14 @@ p {
 	padding-right: var(--space16);
 	margin-left: auto;
 	margin-right: auto;
-	background: grey;
-}
-
-/* Apply styles starting from Small devices (landscape phones, 576px ) and up to Medium devices (tablets, 768px) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-}
-
-/* Apply styles starting from medium devices(tablets, 768px) and up to Large devices (desktops, 992px) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-	/* .container {
-		width: 750px;
-	} */
-}
-
-/* Apply styles starting from Large devices (desktops, 992px) and up to X-Large devices (large desktops, 1200px) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-	/* .container {
-		width: 970px;
-	} */
-}
-
-/* Apply styles starting from X-Large devices (large desktops, 1200px ) and up to XX-Large devices */
-@media (min-width: 1200px) {
-	/* .container {
-		width: 1170px;
-	} */
+	border: 1px solid var(--light-Gray);
 }
 /********** End global rules **********/
 
 /********** grid container **********/
 .grid-container {
 	display: grid;
-	grid-template-columns: 150px 2.5fr 2fr;
+	grid-template-columns: 1fr 2.5fr 1.5fr;
 	background: lightblue;
 	width: 100%;
 	height: 100vh;
@@ -115,23 +91,23 @@ p {
 	}
 }
 
-/********** main container **********/
+/********** Start main container **********/
 .grid-container .tweets-main-wrapper {
 	display: flex;
 	flex-direction: column;
-	background: blue;
+	border: 1px solid var(--light-Gray);
 }
 
 .grid-container .tweets-main-wrapper .tweets-search-container {
 	height: 80px;
 	margin: 20px;
-	background: rgb(2, 0, 128);
+	background: #e1e8ed;
 }
 
 .grid-container .tweets-main-wrapper .tweets-list-container {
 	height: 500px;
 	margin: 20px;
-	background: green;
+	background: var(--dark-Gray);
 }
 
 .grid-container .tweets-main-wrapper .tweets-list-container .tweet {
@@ -141,35 +117,160 @@ p {
 	background: white;
 	margin: 10px;
 }
+/********** End main container **********/
 
-/********** left sidebar **********/
+/********** Start left sidebar **********/
 .grid-container .navigation-leftSidebar-wrapper {
-	background: red;
+	background: var(--black);
+	color: var(--white);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
-@media (max-width: 767px) {
-	.navigation-leftSidebar-wrapper {
-		display: none;
-	}
+/* direct child */
+.grid-container .navigation-leftSidebar-wrapper > div {
+	margin-bottom: 25px;
 }
 
-@media (max-width: 576px) {
+.grid-container .navigation-leftSidebar-wrapper .profile {
+	width: 65px;
+	height: 65px;
+	cursor: pointer;
+}
+
+.grid-container .navigation-leftSidebar-wrapper .profile-wrapper {
+	width: 100%;
+}
+
+.grid-container .navigation-leftSidebar-wrapper .profile img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	cursor: pointer;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon {
+	display: flex;
+	width: 100%;
+	color: var(--light-Gray);
+	font-size: 23px;
+	transition: var(--transition-duration);
+	-webkit-transition: var(--transition-duration);
+	-moz-transition: var(--transition-duration);
+	-ms-transition: var(--transition-duration);
+	-o-transition: var(--transition-duration);
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon.logo i,
+.grid-container .navigation-leftSidebar-wrapper .side-icon.explore {
+	color: var(--blue);
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon:hover {
+	color: var(--blue);
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon.notifications {
+	position: relative;
+	margin-top: 10px;
+}
+
+.grid-container
+	.navigation-leftSidebar-wrapper
+	.side-icon.notifications::after {
+	position: absolute;
+	content: "3";
+	color: white;
+	text-align: center;
+	background: var(--blue);
+	width: 25px;
+	height: 25px;
+	border: 1px solid var(--blue);
+	left: 4px;
+	top: -20px;
+	border-radius: var(--space50);
+	-webkit-border-radius: var(--space50);
+	-moz-border-radius: var(--space50);
+	-ms-border-radius: var(--space50);
+	-o-border-radius: var(--space50);
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon.tweet {
+	width: 100%;
+	border: 1px solid var(--blue);
+	background: var(--blue);
+	color: var(--light-Gray);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 12px;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon.search,
+.grid-container .navigation-leftSidebar-wrapper .side-icon.add {
+	display: none;
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon i {
+	margin-right: 20px;
+}
+
+@media (max-width: 767.98px) {
 	.grid-container .navigation-leftSidebar-wrapper {
+		width: 100px;
+	}
+
+	.grid-container .navigation-leftSidebar-wrapper .side-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.grid-container .navigation-leftSidebar-wrapper .side-icon.tweet {
+		display: none;
+	}
+
+	.grid-container .navigation-leftSidebar-wrapper .side-icon.search,
+	.grid-container .navigation-leftSidebar-wrapper .side-icon.add {
+		display: flex;
+		color: var(--blue);
+	}
+
+	.grid-container
+		.navigation-leftSidebar-wrapper
+		.side-icon.notifications::after {
+		position: absolute;
+		content: "";
+		display: none;
+	}
+
+	.grid-container .navigation-leftSidebar-wrapper .side-icon span {
 		display: none;
 	}
 }
+/********** End left sidebar **********/
 
-/********** right sidebar **********/
+/********** Start right sidebar **********/
 .grid-container .tweets-rightSidebar-wrapper {
 	display: flex;
-	background: yellow;
 }
 
 .grid-container .tweets-rightSidebar-wrapper .tweet-sidebar {
 	width: 200px;
 	height: 500px;
-	margin: 20px;
 	background: white;
+	display: flex;
 }
 
 @media (max-width: 576px) {
@@ -177,21 +278,36 @@ p {
 		display: none;
 	}
 }
+/********** END right sidebar **********/
+
+/********** Start components **********/
+.main-heading-component {
+	text-align: center;
+}
+
+.padding20 {
+	padding: 20px;
+}
+
+.margin20 {
+	margin: 20px;
+}
+/********** End components **********/
 
 /********** Start Scroll Top **********/
 .back-to-top {
 	cursor: pointer;
 	position: fixed;
 	bottom: 35px;
-	right: 5px;
+	right: 20px;
 	width: var(--space40);
 	height: var(--space40);
-	background: var(--main-color);
+	background: var(--blue);
 	border-radius: var(--space50);
-	-webkit-border-radius: ;
-	-moz-border-radius: ;
-	-ms-border-radius: ;
-	-o-border-radius: ;
+	-webkit-border-radius: var(--space50);
+	-moz-border-radius: var(--space50);
+	-ms-border-radius: var(--space50);
+	-o-border-radius: var(--space50);
 	border: 0;
 	outline: 0;
 	display: flex;
@@ -200,7 +316,7 @@ p {
 }
 
 .back-to-top i {
-	background: var(--secondary-color);
+	background: var(--blue);
 	height: var(--space40);
 	width: var(--space40);
 	color: var(--white);
