@@ -76,7 +76,6 @@ p {
 	background: var(--black);
 	width: 100%;
 	height: 100vh;
-	padding: 20px 0;
 	flex-wrap: nowrap;
 }
 
@@ -96,8 +95,28 @@ p {
 .grid-container .tweets-main-wrapper {
 	display: flex;
 	flex-direction: column;
+	padding-top: 20px;
 	border: 1px solid var(--dark-Gray);
+	border-top: none;
 	flex: 1;
+}
+
+.grid-container .tweets-main-wrapper .tweets-home-container {
+	color: var(--light-Gray);
+	display: flex;
+	justify-content: space-between;
+	min-height: 25px;
+	padding: 20px;
+	padding-top: 0;
+	border-bottom: 1px solid var(--dark-Gray);
+}
+
+.grid-container .tweets-main-wrapper .tweets-home-container .home {
+	font-size: 1.5rem;
+}
+
+.grid-container .tweets-main-wrapper .tweets-home-container i {
+	color: var(--blue);
 }
 
 .grid-container .tweets-main-wrapper .tweets-search-container {
@@ -381,6 +400,10 @@ p {
 
 .padding20 {
 	padding: 20px;
+}
+
+.padding-top20 {
+	padding-top: 20px;
 }
 
 .margin20 {
