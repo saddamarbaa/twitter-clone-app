@@ -1,9 +1,12 @@
 /**
- * ** Start variables *******
  *
- * @format
+ *  @format
+ *  main.css
+ *  These are the final styles for the project.
+ *  Author: Saddam Arbaa
  */
 
+/*** Start variables ****** */
 :root {
 	--blue: #1da1f2;
 	--black: #0f0f11;
@@ -334,27 +337,37 @@ p {
 /********** Start right sidebar **********/
 .grid-container .tweets-rightSidebar-wrapper {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	flex-basis: 32%;
+}
+
+/* Trends for you */
+@media (max-width: 992px) {
+	.grid-container .tweets-rightSidebar-wrapper {
+		display: none;
+	}
+}
+
+/* Topics to follow */
+@media (max-width: 1200px) {
+	.grid-container .tweets-rightSidebar-wrapper .tweet-sidebar.topic-to-flow {
+		display: none;
+	}
 }
 
 .grid-container .tweets-rightSidebar-wrapper .tweet-sidebar {
 	width: 90%;
 	height: 520px;
+	margin-bottom: var(--space25);
 	background: var(--light-Gray);
 	display: flex;
 	flex-direction: column;
-	border-radius: 40px;
-	-webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	-ms-border-radius: 40px;
-	-o-border-radius: 40px;
-}
-
-@media (max-width: 800px) {
-	.grid-container .tweets-rightSidebar-wrapper {
-		display: none;
-	}
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 }
 
 .grid-container .tweets-rightSidebar-wrapper .trends {
@@ -371,7 +384,7 @@ p {
 }
 
 .grid-container .tweets-rightSidebar-wrapper .trends:first-child {
-	min-height: 70px;
+	min-height: 75px;
 }
 
 .grid-container .tweets-rightSidebar-wrapper .trends:not(:first-child):hover {
@@ -413,8 +426,46 @@ p {
 	position: relative;
 }
 
+.grid-container .tweets-rightSidebar-wrapper .trend.heading {
+	font-size: 22px;
+}
+
 .grid-container .tweets-rightSidebar-wrapper .trend i {
 	color: var(--blue);
+}
+
+.grid-container
+	.tweets-rightSidebar-wrapper
+	.tweet-sidebar.topic-to-flow
+	button {
+	cursor: pointer;
+	margin-right: 3px;
+	display: inline-block;
+	background-color: #e1e8ed;
+	min-width: 90px;
+	height: 30px;
+	color: var(--blue);
+	border: 1px solid var(--blue);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	transition: var(--transition-duration);
+	-webkit-transition: var(--transition-duration);
+	-moz-transition: var(--transition-duration);
+	-ms-transition: var(--transition-duration);
+	-o-transition: var(--transition-duration);
+}
+
+.grid-container .tweets-rightSidebar-wrapper .tweet-sidebar.topic-to-flow span {
+	font-size: 17px;
+	font-weight: normal;
+}
+
+.grid-container .tweets-rightSidebar-wrapper .tweet-sidebar.topic-to-flow i {
+	color: var(--black);
+	font-size: 16px;
 }
 
 /********** END right sidebar **********/
