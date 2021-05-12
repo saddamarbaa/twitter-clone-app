@@ -375,7 +375,7 @@ p {
 	min-height: 90px;
 	border-bottom: 1px solid var(--dark-Gray);
 	padding-top: 6px;
-	cursor: pointer;
+
 	transition: var(--transition-duration);
 	-webkit-transition: var(--transition-duration);
 	-moz-transition: var(--transition-duration);
@@ -389,6 +389,7 @@ p {
 
 .grid-container .tweets-rightSidebar-wrapper .trends:not(:first-child):hover {
 	background: var(--dark-Gray);
+	cursor: pointer;
 }
 
 /* Remove border-bottom from the last child */
@@ -468,6 +469,16 @@ p {
 	font-size: 16px;
 }
 
+/* copyright */
+.grid-container .tweets-rightSidebar-wrapper .copyright p {
+	padding: 40px 20px;
+	color: var(--black);
+}
+
+.grid-container .tweets-rightSidebar-wrapper .copyright p span {
+	color: var(--blue);
+}
+
 /********** END right sidebar **********/
 
 /********** Start components **********/
@@ -490,7 +501,7 @@ p {
 	cursor: pointer;
 	position: fixed;
 	bottom: 35px;
-	right: 20px;
+	right: 10px;
 	width: var(--space40);
 	height: var(--space40);
 	background: var(--blue);
