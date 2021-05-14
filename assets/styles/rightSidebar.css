@@ -1,0 +1,171 @@
+/********** Start right sidebar **********/
+.grid-container .tweets-rightSidebar-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  flex - basis: 32 %;
+  
+}
+
+/* Trends for you */
+@media (max-width: 992px) {
+	.grid-container .tweets-rightSidebar-wrapper {
+		display: none;
+	}
+}
+
+/* Topics to follow */
+@media (max-width: 1200px) {
+	.grid-container .tweets-rightSidebar-wrapper .tweet-sidebar.topic-to-flow {
+		display: none;
+	}
+}
+
+.grid-container .tweets-rightSidebar-wrapper .tweet-sidebar {
+	width: 90%;
+	height: 520px;
+	margin-bottom: var(--space25);
+	background: var(--light-Gray);
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.grid-container .tweets-rightSidebar-wrapper .trends {
+	width: 100%;
+	min-height: 90px;
+	border-bottom: 1px solid var(--dark-Gray);
+	padding-top: 6px;
+	transition: var(--transition-duration);
+	-webkit-transition: var(--transition-duration);
+	-moz-transition: var(--transition-duration);
+	-ms-transition: var(--transition-duration);
+	-o-transition: var(--transition-duration);
+}
+
+.grid-container .tweets-rightSidebar-wrapper .trends:first-child {
+	min-height: 75px;
+}
+
+.grid-container .tweets-rightSidebar-wrapper .trends:not(:first-child):hover {
+	cursor: pointer;
+	box-shadow: 3px 15px 16px -1px rgba(101, 119, 134, 0.75);
+	-webkit-box-shadow: 3px 15px 16px -1px rgba(101, 119, 134, 0.75);
+	-moz-box-shadow: 3px 15px 16px -1px rgba(101, 119, 134, 0.75);
+	background: rgba(16, 64, 83, 0.1);
+}
+
+/* Remove border-bottom from the last child */
+.grid-container .tweets-rightSidebar-wrapper .trends:last-child {
+	border-bottom: 0;
+	font-weight: normal;
+	color: var(--blue);
+}
+
+/* Number of tweets */
+.grid-container .tweets-rightSidebar-wrapper .number-of-tweets {
+	position: absolute;
+	bottom: -7px !important;
+	left: 20px !important;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.grid-container .tweets-rightSidebar-wrapper .trending-type {
+	position: absolute;
+	top: 1px !important;
+	left: 20px !important;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.grid-container .tweets-rightSidebar-wrapper .trend {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row !important;
+	width: 100%;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 20px;
+	position: relative;
+}
+
+.grid-container .tweets-rightSidebar-wrapper .trend.heading {
+	font-size: 22px;
+}
+
+.grid-container .tweets-rightSidebar-wrapper .trend i {
+	color: var(--blue);
+}
+
+.grid-container
+	.tweets-rightSidebar-wrapper
+	.tweet-sidebar.topic-to-flow
+	button {
+	cursor: pointer;
+	margin-right: 3px;
+	display: inline-block;
+	background-color: #e1e8ed;
+	min-width: 90px;
+	height: 30px;
+	color: var(--blue);
+	border: 1px solid var(--blue);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	transition: var(--transition-duration);
+	-webkit-transition: var(--transition-duration);
+	-moz-transition: var(--transition-duration);
+	-ms-transition: var(--transition-duration);
+	-o-transition: var(--transition-duration);
+}
+
+.grid-container .tweets-rightSidebar-wrapper .tweet-sidebar.topic-to-flow span {
+	font-size: 17px;
+	font-weight: normal;
+}
+
+.grid-container .tweets-rightSidebar-wrapper .tweet-sidebar.topic-to-flow i {
+	color: var(--black);
+	font-size: 16px;
+}
+
+/* copyright */
+.grid-container .tweets-rightSidebar-wrapper .tweet-sidebar.copyright {
+	height: auto;
+}
+
+.grid-container .tweet-sidebar.copyright .trends {
+	transition: var(--transition-duration);
+	-webkit-transition: var(--transition-duration);
+	-moz-transition: var(--transition-duration);
+	-ms-transition: var(--transition-duration);
+	-o-transition: var(--transition-duration);
+	padding: 20px;
+
+}
+
+.grid-container .tweet-sidebar.copyright .trends:hover {
+	cursor: pointer;
+	cursor: pointer;
+	box-shadow: 3px 15px 16px -1px rgba(101, 119, 134, 0.75);
+	-webkit-box-shadow: 3px 15px 16px -1px rgba(101, 119, 134, 0.75);
+	-moz-box-shadow: 3px 15px 16px -1px rgba(101, 119, 134, 0.75);
+	background: rgba(16, 64, 83, 0.1);
+}
+
+.grid-container .tweets-rightSidebar-wrapper .copyright p {
+	
+	color: var(--black);
+}
+
+.grid-container .tweets-rightSidebar-wrapper .copyright p span {
+	color: var(--blue);
+}
+/********** END right sidebar **********/

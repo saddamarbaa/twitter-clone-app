@@ -1,0 +1,140 @@
+/**
+ *
+ *  @format
+ *  main.css
+ *  These are the final styles for the project.
+ *  Author: Saddam Arbaa
+ */
+
+/*** Start variables ****** */
+:root {
+	--blue: #1da1f2;
+	--black: #0f0f11;
+	--dark-Gray: #657786;
+	--light-Gray: #e1e8ed;
+	--white: #fff;
+	--space16: 16px;
+	--space20: 20px;
+	--space25: 25px;
+	--space30: 30px;
+	--space40: 40px;
+	--space50: 50px;
+	--space60: 60px;
+	--space70: 70px;
+	--space80: 80px;
+	--space90: 90px;
+	--space100: 100px;
+	--line-height-space: 1.7;
+	--transition-duration: 0.3s;
+}
+/********** End variables **********/
+
+/********** Start global rules **********/
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* fix button outline border on hover */
+*:focus {
+	outline: 0 !important;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Roboto, Helvetica, Arial, sans-serif"; /* Google Web Fonts */
+	background: var(--black);
+}
+
+ul {
+	list-style: none;
+}
+
+p {
+	line-height: var(--line-height-space);
+}
+
+.container {
+	padding-left: var(--space16);
+	padding-right: var(--space16);
+	margin-left: auto;
+	margin-right: auto;
+}
+/********** End global rules **********/
+
+/********** grid container **********/
+.grid-container {
+	display: flex;
+	background: var(--black);
+	width: 100%;
+	flex-wrap: nowrap;
+}
+
+/********** Start components **********/
+
+.padding20 {
+	padding: 20px;
+}
+
+.padding-top20 {
+	padding-top: 20px;
+}
+
+.margin20 {
+	margin: 20px;
+}
+/********** End components **********/
+
+/********** Start Scroll Top **********/
+.back-to-top {
+	cursor: pointer;
+	position: fixed;
+	bottom: 35px;
+	right: 10px;
+	width: var(--space40);
+	height: var(--space40);
+	background: var(--blue);
+	border-radius: var(--space50);
+	-webkit-border-radius: var(--space50);
+	-moz-border-radius: var(--space50);
+	-ms-border-radius: var(--space50);
+	-o-border-radius: var(--space50);
+	border: 0;
+	outline: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.back-to-top i {
+	background: var(--blue);
+	height: var(--space40);
+	width: var(--space40);
+	color: var(--white);
+	text-align: center;
+	line-height: 40px;
+	font-size: var(--space20);
+	border-radius: var(--space50);
+	-webkit-border-radius: var(--space50);
+	-moz-border-radius: var(--space50);
+	-ms-border-radius: var(--space50);
+	-o-border-radius: var(--space50);
+	transition: var(--transition-duration);
+	-webkit-transition: var(--transition-duration);
+	-moz-transition: var(--transition-duration);
+	-ms-transition: var(--transition-duration);
+	-o-transition: var(--transition-duration);
+}
+
+@media (max-width: 380px) {
+	.back-to-top {
+		bottom: var(--space100);
+	}
+}
+/********** End Scroll Top **********/

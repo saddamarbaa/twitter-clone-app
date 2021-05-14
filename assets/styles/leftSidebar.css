@@ -1,0 +1,182 @@
+/**
+ * ******* Start left sidebar *********
+ *
+ * @format
+ */
+
+.grid-container .navigation-leftSidebar-wrapper {
+	background: var(--black);
+	color: var(--white);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-basis: 20%;
+}
+
+/* direct child */
+.grid-container .navigation-leftSidebar-wrapper > div {
+	margin-bottom: 25px;
+}
+
+.grid-container .navigation-leftSidebar-wrapper .profile {
+	width: 65px;
+	height: 65px;
+	cursor: pointer;
+}
+
+@media (max-width: 576px) {
+	.grid-container .navigation-leftSidebar-wrapper .profile {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+.grid-container .navigation-leftSidebar-wrapper .profile-wrapper {
+	width: 100%;
+}
+
+.grid-container .navigation-leftSidebar-wrapper .profile img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	cursor: pointer;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon {
+	display: flex;
+	width: 100%;
+	color: var(--light-Gray);
+	font-size: 23px;
+	transition: var(--transition-duration);
+	-webkit-transition: var(--transition-duration);
+	-moz-transition: var(--transition-duration);
+	-ms-transition: var(--transition-duration);
+	-o-transition: var(--transition-duration);
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon:not(:first-child) {
+	cursor: pointer;
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon.logo i,
+.grid-container .navigation-leftSidebar-wrapper .side-icon.explore {
+	color: var(--blue);
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon:hover {
+	color: var(--blue);
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon.notifications {
+	position: relative;
+	margin-top: 10px;
+}
+
+.grid-container
+	.navigation-leftSidebar-wrapper
+	.side-icon.notifications::after {
+	position: absolute;
+	content: "3";
+	color: white;
+	text-align: center;
+	background: var(--blue);
+	width: 25px;
+	height: 25px;
+	border: 1px solid var(--blue);
+	left: 4px;
+	top: -20px;
+	border-radius: var(--space50);
+	-webkit-border-radius: var(--space50);
+	-moz-border-radius: var(--space50);
+	-ms-border-radius: var(--space50);
+	-o-border-radius: var(--space50);
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon.tweet {
+	width: 100%;
+	border: 1px solid var(--blue);
+	background: var(--blue);
+	color: var(--light-Gray);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 12px;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon.search,
+.grid-container .navigation-leftSidebar-wrapper .side-icon.add {
+	display: none;
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon.explore {
+	position: relative;
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon.explore::after {
+	position: absolute;
+	content: "";
+	top: -2px;
+	right: -21px;
+	bottom: -19px;
+	width: 3px;
+	height: 86px;
+	background: var(--blue);
+	z-index: 10;
+}
+
+.grid-container .navigation-leftSidebar-wrapper .side-icon i {
+	margin-right: 20px;
+}
+
+@media (max-width: 767.98px) {
+	.grid-container .navigation-leftSidebar-wrapper {
+		width: 120px !important;
+		width: 100px;
+		min-width: 80px;
+		overflow: hidden;
+	}
+
+	.grid-container .navigation-leftSidebar-wrapper .side-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.grid-container .navigation-leftSidebar-wrapper .side-icon.tweet {
+		display: none;
+	}
+
+	.grid-container .navigation-leftSidebar-wrapper .side-icon.search,
+	.grid-container .navigation-leftSidebar-wrapper .side-icon.add {
+		display: flex;
+		color: var(--blue);
+	}
+
+	.grid-container
+		.navigation-leftSidebar-wrapper
+		.side-icon.notifications::after {
+		position: absolute;
+		content: "";
+		display: none;
+	}
+
+	.grid-container .navigation-leftSidebar-wrapper .side-icon span {
+		display: none;
+	}
+
+	.grid-container .navigation-leftSidebar-wrapper .side-icon.explore::after {
+		top: -50px;
+		height: 76px;
+	}
+}
+/********** End left sidebar **********/
