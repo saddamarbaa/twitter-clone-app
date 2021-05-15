@@ -53,10 +53,7 @@
 	padding-right: 60px;
 }
 
-.grid-container
-	.tweets-main-wrapper
-	.tweets-search-container
-	.search-icon-wrapper {
+.grid-container .tweets-main-wrapper .search-icon-wrapper {
 	position: absolute;
 	right: 20px;
 	top: 50%;
@@ -78,6 +75,18 @@
 	display: flex;
 	align-items: center;
 	color: var(--light-Gray);
+	position: relative;
+}
+
+.grid-container .tweets-main-wrapper .tweets-user-info-add {
+	position: absolute;
+	right: 0;
+	top: calc(50% - 10px);
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
 }
 
 .grid-container .tweets-list-container .tweets-user-info .image {
@@ -115,10 +124,11 @@
 }
 
 .grid-container .tweets-list-container .tweets-images-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	border-radius: 10px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+	grid-column-gap: 20px;
+		border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
@@ -128,6 +138,7 @@
 .grid-container .tweets-list-container .tweets-images-container .img {
 	height: 190px;
 	margin-bottom: 10px;
+
 }
 
 .grid-container .tweets-list-container .tweets-images-container img {
