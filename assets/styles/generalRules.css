@@ -76,8 +76,31 @@ p {
 	flex-wrap: nowrap;
 }
 
-/********** Start components **********/
+/********** Start Next Page **********/
+.next-page-conatiner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--dark-Gray);
+	cursor: pointer;
+	padding: 20px;
+	margin: 20px 0;
+	border: 1px solid var(--dark-Gray);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
 
+.next-page-conatiner:hover {
+	box-shadow: 3px 15px 16px -1px rgba(98, 123, 143, 0.75);
+	-webkit-box-shadow: 3px 15px 16px -1px rgba(101, 119, 134, 0.75);
+	-moz-box-shadow: 3px 15px 16px -1px rgba(101, 119, 134, 0.75);
+	background: rgba(16, 64, 83, 0.1);
+}
+/********** End Next Page **********/
+/********** Start components **********/
 .padding20 {
 	padding: 20px;
 }
