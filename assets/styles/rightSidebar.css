@@ -1,10 +1,14 @@
-/********** Start right sidebar **********/
+/**
+ * ******* Start right sidebar *********
+ *
+ * @format
+ */
+
 .grid-container .tweets-rightSidebar-wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  flex - basis: 32 %;
-  
+	flex-basis: 32%;
 }
 
 /* Trends for you */
@@ -148,7 +152,6 @@
 	-ms-transition: var(--transition-duration);
 	-o-transition: var(--transition-duration);
 	padding: 20px;
-
 }
 
 .grid-container .tweet-sidebar.copyright .trends:hover {
@@ -160,13 +163,11 @@
 }
 
 .grid-container .tweets-rightSidebar-wrapper .copyright p {
-	
 	color: var(--black);
 }
 
 .grid-container .tweets-rightSidebar-wrapper .copyright p span {
 	color: var(--blue);
 }
-
 
 /********** END right sidebar **********/
