@@ -81,7 +81,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: var(--dark-Gray);
+	color: var(--white);
 	cursor: pointer;
 	padding: 20px;
 	margin: 20px 0;
@@ -94,10 +94,10 @@ p {
 }
 
 .next-page-conatiner:hover {
-	box-shadow: 3px 15px 16px -1px rgba(98, 123, 143, 0.75);
-	-webkit-box-shadow: 3px 15px 16px -1px rgba(101, 119, 134, 0.75);
-	-moz-box-shadow: 3px 15px 16px -1px rgba(101, 119, 134, 0.75);
-	background: rgba(16, 64, 83, 0.1);
+	background: rgba(101, 119, 134, 0.2);
+	-moz-box-shadow: 1px 1px 3px 2px #657786;
+	-webkit-box-shadow: 1px 1px 3px 2px #657786;
+	box-shadow: 1px 1px 3px 2px #657786;
 }
 /********** End Next Page **********/
 
@@ -162,5 +162,3 @@ p {
 	}
 }
 /********** End Scroll Top **********/
-
-
