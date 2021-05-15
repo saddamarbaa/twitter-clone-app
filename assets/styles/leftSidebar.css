@@ -83,7 +83,9 @@
 	position: absolute;
 	content: "3";
 	color: white;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background: var(--blue);
 	width: 25px;
 	height: 25px;
