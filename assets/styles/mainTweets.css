@@ -65,10 +65,22 @@
 }
 
 .grid-container .tweets-main-wrapper .tweets-list-container {
-	/* height: 500px; */
 	padding: 20px;
 	color: var(--light-Gray);
 	border-bottom: 1px solid var(--dark-Gray);
+	cursor: pointer;
+	transition: var(--transition-duration);
+	-webkit-transition: var(--transition-duration);
+	-moz-transition: var(--transition-duration);
+	-ms-transition: var(--transition-duration);
+	-o-transition: var(--transition-duration);
+}
+
+.grid-container .tweets-main-wrapper .tweets-list-container:hover {
+	box-shadow: 3px 15px 16px -1px rgba(98, 123, 143, 0.75);
+	-webkit-box-shadow: 3px 15px 16px -1px rgba(101, 119, 134, 0.75);
+	-moz-box-shadow: 3px 15px 16px -1px rgba(101, 119, 134, 0.75);
+	background: rgba(16, 64, 83, 0.1);
 }
 
 .grid-container .tweets-list-container .tweets-user-info {
@@ -128,7 +140,7 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
 	grid-column-gap: 20px;
-		border-radius: 10px;
+	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
@@ -138,7 +150,6 @@
 .grid-container .tweets-list-container .tweets-images-container .img {
 	height: 190px;
 	margin-bottom: 10px;
-
 }
 
 .grid-container .tweets-list-container .tweets-images-container img {
