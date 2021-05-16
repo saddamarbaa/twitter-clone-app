@@ -2,8 +2,6 @@
 
 // Selectors
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-const rootElement = document.documentElement;
-const navIcon = document.getElementById("toggle");
 
 // Scroll to top logic
 const scrollToTop = () => {
@@ -14,18 +12,23 @@ const scrollToTop = () => {
 	});
 };
 
-const toggleBetweenClass = () => {
-	document.getElementById("header-nav").classList.toggle("show");
-};
-
 // EventListener
 scrollToTopBtn.addEventListener("click", scrollToTop);
-navIcon.addEventListener("click", toggleBetweenClass);
 
-const URL = "http://localhost:3000/tweets";
-
-// Retrive Twitter Data from API
-const getTwitterData = () => {};
+// Retrieve Twitter Data from API
+const getTwitterData = () => {
+	const URL = "http://localhost:3000/api/tweet/search?q=coding&count=15";
+	fetch(URL)
+		.then((response) => {
+			return response.json();
+		})
+		.then((data) => {
+			console.log(data.result.statuses);
+		})
+		.catch((error) => {
+			console.log(error);
+		});
+};
 
 //  Save the next page data
 const saveNextPage = (metadata) => {};
@@ -45,5 +48,6 @@ const buildImages = (mediaList) => {};
 // Build HTML for Tweets Video
 const buildVideo = (mediaList) => {};
 
-
-
+window.onload = () => {
+	getTwitterData();
+};
