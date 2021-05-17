@@ -31,6 +31,8 @@ const getTwitterData = () => {
 			return response.json();
 		})
 		.then((data) => {
+			const query = (document.getElementById("user-search-input").value =
+				"");
 			buildTweets(data.result.statuses);
 		})
 		.catch((error) => {});
@@ -47,14 +49,23 @@ const nextPageButtonVisibility = (metadata) => {};
 
 // Build Tweets HTML based on Data from API
 const buildTweets = (tweets, nextPage) => {
+	document.getElementById("tweets-list-container").innerHTML = "";
 	tweets.map((tweet) => {
+		const name = tweet.user.name;
+		const twitterName = tweet.user.screen_name;
+		const tweetTextContent = tweet.full_text;
+		const userImage = tweet.user["profile_image_url"];
+
 		let twitterContentEl = `
+
 		<div class='tweets-list-container'>
 			<div class='tweets-user-info'>
-				<div class='image'></div>
+		<div class='image'	style="background-image: url(${userImage})">
+				
+				</div>
 				<div class='info'>
-					<div class='name'>Coach | Saddam Arbaa</div>
-					<div class='twitter-name'>@ArbaaSaddam</div>
+					<div class='name'> ${name}</div>
+					<div class='twitter-name'>@${twitterName}</div>
 				</div>
 
 				<div class='tweets-user-info-add'>
@@ -64,15 +75,22 @@ const buildTweets = (tweets, nextPage) => {
 
 			<div class='tweets-text-container'>
 				<p>
-				${tweet.full_text}
+				${tweetTextContent}
 				</p>
 			</div>
+			`;
 
+		if (tweet.extended_entities && tweet.extended_entities.media.length > 0) {
+			const tweetsImage = tweet.extended_entities.media[0].media_url;
+			twitterContentEl += `
 			<div class='tweets-images-container'>
-				<div class='img'>
-					<img src='./assets/img/s.png' alt='img' />
-				</div>
+			<div class='img'>
+				<img src='${tweetsImage}' />
 			</div>
+		</div>`;
+		}
+
+		twitterContentEl += `
 			<div class='tweets-date-container'>20 hours age</div>
 			<div class='tweets-addtional-container'>
 				<i title='Reply' class='far fa-comments reply'></i>
@@ -84,6 +102,7 @@ const buildTweets = (tweets, nextPage) => {
 			</div>
 		</div>
 		`;
+
 		document.getElementById(
 			"tweets-list-container",
 		).innerHTML += twitterContentEl;
