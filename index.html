@@ -114,14 +114,20 @@
 						<i class="far fa-star"></i>
 					</div>
 					<div class="tweets-search-container">
+						<!-- call getTwitterData function and keyboard event -->
 						<input
 							type="text"
 							name="search"
-							id="search"
+							id="user-search-input"
 							placeholder="Search Tweets"
+							autofocus
+							onkeyup="onEnter(event)"
 						/>
 						<div class="search-icon-wrapper">
-							<i class="fas fa-search fa-flip-horizontal"></i>
+							<i
+								class="fas fa-search fa-flip-horizontal"
+								onclick="getTwitterData()"
+							></i>
 						</div>
 					</div>
 					<div class="tweets-list-container">
@@ -179,46 +185,10 @@
 					</div>
 
 					<!-- Second Tweet -->
-					<div class="tweets-list-container">
-						<div class="tweets-user-info">
-							<div class="image"></div>
-							<div class="info">
-								<div class="name">Coach | Saddam Arbaa</div>
-								<div class="twitter-name">@ArbaaSaddam</div>
-							</div>
-
-							<div class="tweets-user-info-add">
-								<i class="fas fa-ellipsis-h" title="More"></i>
-							</div>
-						</div>
-
-						<div class="tweets-text-container">
-							<p>
-								Today I coded 2 hrs 42 mins towards my @WakaTime goal of
-								coding 1 hr per day except saturday.
-								https://wakatime.com/goals Heavy check mark
-
-								<span class="hastag"
-									>#freeCodeCamp #code #LearnToCode #programming
-									#devlife #codegoal #301DaysOfCode
-									https://wakatime.com/@152eaa56-bd3d</span
-								>
-							</p>
-						</div>
-
-						<div class="tweets-images-container">
-							<div class="img">
-								<img src="./assets/img/s.png" alt="img" />
-							</div>
-						</div>
-						<div class="tweets-date-container">20 hours age</div>
-						<div class="tweets-addtional-container">
-							<i title="Reply" class="far fa-comments reply"></i>
-							<i title="share" class="fas fa-retweet"></i>
-							<i title="Like" class="fas fa-heart">&nbsp; &nbsp; 20</i>
-							<i title="Share" class="fas fa-share-alt"></i>
-						</div>
-					</div>
+					<div
+						class="tweets-list-container"
+						id="tweets-list-container"
+					></div>
 
 					<!-- Next page -->
 					<div class="next-page-conatiner">

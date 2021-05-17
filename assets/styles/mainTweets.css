@@ -55,6 +55,7 @@
 
 .grid-container .tweets-main-wrapper .search-icon-wrapper {
 	position: absolute;
+	cursor: pointer;
 	right: 20px;
 	top: 50%;
 	transform: translateY(-50%);
