@@ -48,7 +48,9 @@ html {
 }
 
 body {
-	font-family: "Roboto, Helvetica, Arial, sans-serif"; /* Google Web Fonts */
+	font-family: "Poppins", sans-serif;
+
+	/* font-family: "Poppins", sans-serif; */
 	background: var(--black);
 }
 

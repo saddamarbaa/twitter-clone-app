@@ -71,10 +71,10 @@
 	border-bottom: 1px solid var(--dark-Gray);
 	cursor: pointer;
 	transition: var(--transition-duration);
-	-webkit-transition: var(--transition-duration);
-	-moz-transition: var(--transition-duration);
-	-ms-transition: var(--transition-duration);
-	-o-transition: var(--transition-duration);
+	-webkit-transition:;
+	-moz-transition:;
+	-ms-transition:;
+	-o-transition:;
 }
 
 .grid-container .tweets-main-wrapper .tweets-list-container:hover {
