@@ -1,14 +1,9 @@
 /** @format */
 
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+const rootElement = document.documentElement;
 const URL = "http://localhost:3000/api/tweets";
 let nextPageUrl = null;
-
-// Random notifications
-const updateNotifications = () => {
-	const notifications = document.querySelector("#notifications");
-	notifications.dataset.progress = Math.floor(Math.random() * 20 + 1);
-};
 
 // Scroll to top logic
 const scrollToTop = () => {
@@ -21,6 +16,12 @@ const scrollToTop = () => {
 
 // EventListener
 scrollToTopBtn.addEventListener("click", scrollToTop);
+
+// Random notifications
+const updateNotifications = () => {
+	const notifications = document.querySelector("#notifications");
+	notifications.dataset.progress = Math.floor(Math.random() * 20 + 1);
+};
 
 const onEnter = (event) => {
 	if (event.key === "Enter") {
