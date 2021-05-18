@@ -71,10 +71,10 @@
 	border-bottom: 1px solid var(--dark-Gray);
 	cursor: pointer;
 	transition: var(--transition-duration);
-	-webkit-transition: ;
-	-moz-transition: ;
-	-ms-transition: ;
-	-o-transition: ;
+	-webkit-transition: var(--transition-duration);
+	-moz-transition: var(--transition-duration);
+	-ms-transition: var(--transition-duration);
+	-o-transition: var(--transition-duration);
 }
 
 .grid-container .tweets-main-wrapper .tweets-list-container:hover {
@@ -83,6 +83,30 @@
 	-webkit-box-shadow: 1px 1px 3px 2px #657786;
 	box-shadow: 1px 1px 3px 2px #657786;
 	border: 1px solid #657786;
+}
+
+.grid-container .tweets-list-container .welcome-message-container {
+	position: relative;
+	margin-bottom: 30px !important;
+	min-height: 110px;
+	padding-bottom: 20px;
+}
+
+.grid-container .tweets-list-container .welcome-message-container p {
+	margin-top: 10px;
+	margin-bottom: 20px !important;
+}
+
+.grid-container .tweets-list-container .welcome-message-container:after {
+	content: "";
+	position: absolute;
+	left: -20px;
+	right: 0;
+	bottom: -25px;
+	height: 1px;
+	width: calc(100% + 40px);
+	background: var(--dark-Gray);
+	margin-bottom: 30px;
 }
 
 .grid-container .tweets-list-container .tweets-user-info {
