@@ -47,6 +47,7 @@
 		<!-- Main Js file  -->
 		<script src="./assets/scripts/main.js" defer></script>
 
+		<!-- moment.js cdn link  -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 		<script
 			src="https://kit.fontawesome.com/c939d0e917.js"
@@ -219,7 +220,7 @@
 
 						<div class="trends">
 							<div class="trend">
-								#coding
+								<p onclick="selectTrend(this)">#coding</p>
 								<i class="fas fa-ellipsis-h" title="More"></i>
 								<span class="trending-type">Trending in Coding</span>
 
@@ -229,7 +230,8 @@
 
 						<div class="trends">
 							<div class="trend">
-								#JavaScript
+								<p onclick="selectTrend(this)">#JavaScript</p>
+
 								<i class="fas fa-ellipsis-h" title="More"></i>
 								<span class="trending-type"
 									>Trending in Vanilla JS</span
@@ -240,7 +242,8 @@
 
 						<div class="trends">
 							<div class="trend">
-								#React
+								<p onclick="selectTrend(this)">#React</p>
+
 								<i class="fas fa-ellipsis-h" title="More"></i>
 								<span class="trending-type">Trending in React JS </span>
 								<span class="number-of-tweets">752.6K Tweets</span>
@@ -249,7 +252,8 @@
 
 						<div class="trends">
 							<div class="trend">
-								#100daysofcode
+								<p onclick="selectTrend(this)">#100daysofcode</p>
+
 								<i class="fas fa-ellipsis-h" title="More"></i>
 								<span class="trending-type"
 									>Trending in 100daysofcode</span
@@ -258,7 +262,9 @@
 							</div>
 						</div>
 						<div class="trends">
-							<div class="trend">Show More</div>
+							<div onclick="selectTrend(this)" class="trend">
+								Show More
+							</div>
 						</div>
 					</div>
 
@@ -271,7 +277,7 @@
 							<div class="trend">
 								<div>
 									<p>News</p>
-									<span>COVID-19</span>
+									<span onclick="selectTrend(this)">COVID-19</span>
 								</div>
 								<div class="btton-container">
 									<button>Flow</button>
@@ -284,7 +290,9 @@
 							<div class="trend">
 								<div>
 									<p>Internship</p>
-									<span>Coding future</span>
+									<span onclick="selectTrend(this)"
+										>Coding future</span
+									>
 								</div>
 								<div class="btton-container">
 									<button>Flow</button>
@@ -297,7 +305,7 @@
 							<div class="trend">
 								<div>
 									<p>Scholarships</p>
-									<span>Eduction</span>
+									<span onclick="selectTrend(this)">Eduction</span>
 								</div>
 								<div class="btton-container">
 									<button>Flow</button>
@@ -310,7 +318,7 @@
 							<div class="trend">
 								<div>
 									<p>VS Code</p>
-									<span>Code editor </span>
+									<span onclick="selectTrend(this)">Code editor</span>
 								</div>
 								<div class="btton-container">
 									<button>Flow</button>
@@ -320,7 +328,9 @@
 						</div>
 
 						<div class="trends">
-							<div class="trend">Show More</div>
+							<div onclick="selectTrend(this)" class="trend">
+								Show More
+							</div>
 						</div>
 					</div>
 

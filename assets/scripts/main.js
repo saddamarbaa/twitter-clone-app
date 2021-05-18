@@ -4,13 +4,11 @@
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 const URL = "http://localhost:3000/api/tweets";
 
-// random notifications
-window.onload = () => {
+// Random notifications
+const updateNotifications = () => {
 	const notifications = document.querySelector("#notifications");
 	notifications.dataset.progress = Math.floor(Math.random() * 20 + 1);
 };
-
-// alert(Math.floor(Math.random() * 10));
 
 // Scroll to top logic
 const scrollToTop = () => {
@@ -45,15 +43,23 @@ const getTwitterData = () => {
 			const query = (document.getElementById("user-search-input").value =
 				"");
 			buildTweets(data.result.statuses);
-		})
-		.catch((error) => {});
+			updateNotifications();
+		});
 };
 
 //  Save the next page data
 const saveNextPage = (metadata) => {};
 
 // Handle when a user clicks on a trend
-const selectTrend = (e) => {};
+const selectTrend = (e) => {
+	let selectedTrend = e.innerText;
+	if (selectedTrend[0] === "#") {
+		selectedTrend = selectedTrend.substring(1);
+	}
+
+	document.getElementById("user-search-input").value = selectedTrend;
+	getTwitterData();
+};
 
 // Set the visibility of next page based on if there is data on next page
 const nextPageButtonVisibility = (metadata) => {};
