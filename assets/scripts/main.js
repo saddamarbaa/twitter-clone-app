@@ -62,6 +62,7 @@ const nextPageButtonVisibility = (metadata) => {};
 const buildTweets = (tweets, nextPage) => {
 	document.getElementById("tweets-list-container").innerHTML = "";
 	tweets.map((tweet) => {
+		const createdDate = moment(tweet.created_at).fromNow();
 		const name = tweet.user.name;
 		const twitterName = tweet.user.screen_name;
 		const tweetTextContent = tweet.full_text;
@@ -101,7 +102,7 @@ const buildTweets = (tweets, nextPage) => {
 		}
 
 		twitterContentEl += `
-			<div class='tweets-date-container'>20 hours age</div>
+			<div class='tweets-date-container'>${createdDate}</div>
 			<div class='tweets-addtional-container'>
 				<i title='Reply' class='far fa-comments reply'></i>
 				<i title='share' class='fas fa-retweet'></i>
