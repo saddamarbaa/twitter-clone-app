@@ -1,9 +1,9 @@
 #  twitter-clone
 ==> Building Twitter Clone using Node.js and Vanilla javascript
 
-# <a href="https://twitter-clone-saddam.netlify.app/">Live Demo (The project is not been completed yet)</a>
+# <a href="https://twitter-clone-saddam.netlify.app/">Live Demo </a>
  
-#  <a href="https://saddamarbaa.github.io/twitter-clone-app/">GitHub PAGES DEMO (The project is not been completed yet)</a>
+#  <a href="https://saddamarbaa.github.io/twitter-clone-app/">GitHub PAGES DEMO </a>
 
 
 #  <a href="">SEE MY twitter-clone API REPO (TODO)</a>
@@ -51,12 +51,23 @@
  
 
 
-# responsive on large screens(Home Page) (TODO)
+# responsive on large screens(Home Page) 
+![image](https://user-images.githubusercontent.com/51326421/118637523-1b274000-b800-11eb-9d34-14a3665595d6.png)
+
+
+![image](https://user-images.githubusercontent.com/51326421/118638010-95f05b00-b800-11eb-9c79-d1c63554a8bc.png)
 
 
 
+# responsive on mobile and tablet screens 
 
-# responsive on mobile and tablet screens (TODO)
+![image](https://user-images.githubusercontent.com/51326421/118638206-c7692680-b800-11eb-8734-cedbb670f6bf.png)
+
+
+# responsive on small screens
+
+![image](https://user-images.githubusercontent.com/51326421/118638285-dfd94100-b800-11eb-82fe-4b8a288edd51.png)
+
 
 
 
