@@ -85,6 +85,7 @@ p {
 	align-items: center;
 	color: var(--white);
 	cursor: pointer;
+	display: none;
 	padding: 20px;
 	margin: 20px 0;
 	border: 1px solid var(--dark-Gray);

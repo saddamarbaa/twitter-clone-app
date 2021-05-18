@@ -1,8 +1,8 @@
 /** @format */
 
-// Selectors
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 const URL = "http://localhost:3000/api/tweets";
+let nextPageUrl = null;
 
 // Random notifications
 const updateNotifications = () => {
@@ -29,11 +29,14 @@ const onEnter = (event) => {
 };
 
 // Retrieve Twitter Data from API
-const getTwitterData = () => {
-	const query = document.getElementById("user-search-input").value;
-	const encodedQuery = encodeURIComponent(query);
-	const fulUrl = `${URL}/search?q=${encodedQuery}&count=10`;
+const getTwitterData = (nextPageBoolean) => {
+	let query = document.getElementById("user-search-input").value;
+	if (nextPageUrl || nextPageBoolean) query = "coding";
 	if (!query) return;
+
+	const encodedQuery = encodeURIComponent(query);
+	let fulUrl = `${URL}/search?q=${encodedQuery}&count=10`;
+	if (nextPageUrl && nextPageBoolean) fulUrl = nextPageUrl;
 
 	fetch(fulUrl)
 		.then((response) => {
@@ -42,13 +45,30 @@ const getTwitterData = () => {
 		.then((data) => {
 			const query = (document.getElementById("user-search-input").value =
 				"");
-			buildTweets(data.result.statuses);
+
+			buildTweets(data.result.statuses, nextPageBoolean);
 			updateNotifications();
-		});
+			saveNextPage(data.result.search_metadata);
+			nextPageButtonVisibility(data.result.search_metadata);
+		})
+		.catch((error) => {});
 };
 
-//  Save the next page data
-const saveNextPage = (metadata) => {};
+// Save the next page data
+const saveNextPage = (metadata) => {
+	if (metadata.next_results) {
+		nextPageUrl = `${URL}/search${metadata.next_results}`;
+	} else {
+		nextPageUrl = null;
+	}
+};
+
+// Handle next page
+const onNextPage = () => {
+	if (nextPageUrl) {
+		getTwitterData(true);
+	}
+};
 
 // Handle when a user clicks on a trend
 const selectTrend = (e) => {
@@ -56,17 +76,23 @@ const selectTrend = (e) => {
 	if (selectedTrend[0] === "#") {
 		selectedTrend = selectedTrend.substring(1);
 	}
-
 	document.getElementById("user-search-input").value = selectedTrend;
 	getTwitterData();
 };
 
 // Set the visibility of next page based on if there is data on next page
-const nextPageButtonVisibility = (metadata) => {};
+const nextPageButtonVisibility = (metadata) => {
+	if (metadata.next_results) {
+		document.querySelector(".next-page-conatiner").style.display = "flex";
+	} else {
+		document.querySelector(".next-page-conatiner").style.display = "none";
+	}
+};
 
 // Build Tweets HTML based on Data from API
-const buildTweets = (tweets, nextPage) => {
+const buildTweets = (tweets, nextPageBoolean = false) => {
 	document.getElementById("tweets-list-container").innerHTML = "";
+	let twitterContentEl = "";
 	tweets.map((tweet) => {
 		const createdDate = moment(tweet.created_at).fromNow();
 		const name = tweet.user.name;
@@ -74,11 +100,10 @@ const buildTweets = (tweets, nextPage) => {
 		const tweetTextContent = tweet.full_text;
 		const userImage = tweet.user["profile_image_url_https"];
 
-		let twitterContentEl = `
-
+		twitterContentEl += `
 		<div class='tweets-list-container'>
 			<div class='tweets-user-info'>
-		<div class='image'	style="background-image: url(${userImage})">
+		  <div class='image' style="background-image: url(${userImage})">
 				
 				</div>
 				<div class='info'>
@@ -120,13 +145,17 @@ const buildTweets = (tweets, nextPage) => {
 		</div>
 		`;
 
-		document.getElementById(
-			"tweets-list-container",
-		).innerHTML += twitterContentEl;
+		let htmlTweetContentEl = document.getElementById("tweets-list-container");
+
+		if (nextPageBoolean) {
+			htmlTweetContentEl.innerHTML += twitterContentEl;
+		} else {
+			htmlTweetContentEl.innerHTML = twitterContentEl;
+		}
 	});
 };
 
-//  Build HTML for Tweets Images
+// Build HTML for Tweets Images
 const buildImages = (mediaList) => {
 	let imagesContent = `<div class='tweets-images-container'>`;
 	let imagesExist = false;

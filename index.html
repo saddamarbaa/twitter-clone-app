@@ -197,15 +197,15 @@
 					</div>
 
 					<!-- Next page -->
-					<div class="next-page-conatiner">
+					<!-- onclick call next page function -->
+					<div class="next-page-conatiner" onclick="onNextPage()">
 						<i
-							title="next page"
+							onclick="onNextPage()"
+							title="next page "
 							class="fas fa-arrow-right fa-rotate-90"
 						></i>
 					</div>
 				</div>
-				<div></div>
-
 				<!-- End main container -->
 
 				<!-- Start right sidebar -->
@@ -276,7 +276,7 @@
 						<div class="trends">
 							<div class="trend">
 								<div>
-									<p>News</p>
+									<p onclick="selectTrend(this)">News</p>
 									<span onclick="selectTrend(this)">COVID-19</span>
 								</div>
 								<div class="btton-container">
@@ -289,11 +289,12 @@
 						<div class="trends">
 							<div class="trend">
 								<div>
-									<p>Internship</p>
+									<p onclick="selectTrend(this)">Internship</p>
 									<span onclick="selectTrend(this)"
 										>Coding future</span
 									>
 								</div>
+
 								<div class="btton-container">
 									<button>Flow</button>
 									<i class="fas fa-times"></i>
@@ -304,9 +305,10 @@
 						<div class="trends">
 							<div class="trend">
 								<div>
-									<p>Scholarships</p>
+									<p onclick="selectTrend(this)">Scholarships</p>
 									<span onclick="selectTrend(this)">Eduction</span>
 								</div>
+
 								<div class="btton-container">
 									<button>Flow</button>
 									<i class="fas fa-times"></i>
@@ -317,7 +319,7 @@
 						<div class="trends">
 							<div class="trend">
 								<div>
-									<p>VS Code</p>
+									<p onclick="selectTrend(this)">VS Code</p>
 									<span onclick="selectTrend(this)">Code editor</span>
 								</div>
 								<div class="btton-container">
