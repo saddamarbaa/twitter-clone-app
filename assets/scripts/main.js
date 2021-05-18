@@ -23,7 +23,7 @@ const onEnter = (event) => {
 const getTwitterData = () => {
 	const query = document.getElementById("user-search-input").value;
 	const encodedQuery = encodeURIComponent(query);
-	const fulUrl = `${URL}/search?q=${encodedQuery}&count=10`;
+	const fulUrl = `${URL}/search?q=${encodedQuery}&count=5`;
 	if (!query) return;
 
 	fetch(fulUrl)
@@ -79,15 +79,12 @@ const buildTweets = (tweets, nextPage) => {
 				</p>
 			</div>
 			`;
-
-		if (tweet.extended_entities && tweet.extended_entities.media.length > 0) {
-			const tweetsImage = tweet.extended_entities.media[0].media_url;
-			twitterContentEl += `
-			<div class='tweets-images-container'>
-			<div class='img'>
-				<img src='${tweetsImage}' />
-			</div>
-		</div>`;
+		if (
+			tweet.extended_entities &&
+			tweet.extended_entities.media &&
+			tweet.extended_entities.media.length > 0
+		) {
+			twitterContentEl += buildImages(tweet.extended_entities.media);
 		}
 
 		twitterContentEl += `
@@ -110,7 +107,20 @@ const buildTweets = (tweets, nextPage) => {
 };
 
 //  Build HTML for Tweets Images
-const buildImages = (mediaList) => {};
+const buildImages = (mediaList) => {
+	let imagesContent = `<div class='tweets-images-container'>`;
+	let imagesExist = false;
+	mediaList.map((media) => {
+		if (media.type == "photo") {
+			imagesExist = true;
+			imagesContent += `<div class='img'>
+				<img src='${media.media_url_https}' />
+			</div>`;
+		}
+	});
+	imagesContent += `</div>`;
+	return imagesExist ? imagesContent : "";
+};
 
 // Build HTML for Tweets Video
 const buildVideo = (mediaList) => {};
