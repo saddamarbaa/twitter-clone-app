@@ -4,6 +4,14 @@
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 const URL = "http://localhost:3000/api/tweets";
 
+// random notifications
+window.onload = () => {
+	const notifications = document.querySelector("#notifications");
+	notifications.dataset.progress = Math.floor(Math.random() * 20 + 1);
+};
+
+// alert(Math.floor(Math.random() * 10));
+
 // Scroll to top logic
 const scrollToTop = () => {
 	// Scroll to top logic
@@ -12,6 +20,9 @@ const scrollToTop = () => {
 		behavior: "smooth",
 	});
 };
+
+// EventListener
+scrollToTopBtn.addEventListener("click", scrollToTop);
 
 const onEnter = (event) => {
 	if (event.key === "Enter") {
@@ -54,7 +65,7 @@ const buildTweets = (tweets, nextPage) => {
 		const name = tweet.user.name;
 		const twitterName = tweet.user.screen_name;
 		const tweetTextContent = tweet.full_text;
-		const userImage = tweet.user["profile_image_url"];
+		const userImage = tweet.user["profile_image_url_https"];
 
 		let twitterContentEl = `
 
@@ -154,6 +165,3 @@ const getVideoOptions = (mediaType) => {
 		return "controls";
 	}
 };
-
-// EventListener
-scrollToTopBtn.addEventListener("click", scrollToTop);

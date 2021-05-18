@@ -75,29 +75,28 @@
 .grid-container .navigation-leftSidebar-wrapper .side-icon.notifications {
 	position: relative;
 	margin-top: 10px;
-	
 }
 
 .grid-container
 	.navigation-leftSidebar-wrapper
 	.side-icon.notifications::after {
 	position: absolute;
-	content: "3";
+	content: attr(data-progress);
 	color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background: var(--blue);
-	width: 25px;
-	height: 25px;
+	width: 27px;
+	height: 27px;
 	border: 1px solid var(--blue);
 	left: 4px;
 	top: -20px;
 	border-radius: var(--space50);
-	-webkit-border-radius: var(--space50);
-	-moz-border-radius: var(--space50);
-	-ms-border-radius: var(--space50);
-	-o-border-radius: var(--space50);
+	-webkit-border-radius: ;
+	-moz-border-radius: ;
+	-ms-border-radius: ;
+	-o-border-radius: ;
 }
 
 .grid-container .navigation-leftSidebar-wrapper .side-icon.tweet {
