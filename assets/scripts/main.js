@@ -23,7 +23,7 @@ const onEnter = (event) => {
 const getTwitterData = () => {
 	const query = document.getElementById("user-search-input").value;
 	const encodedQuery = encodeURIComponent(query);
-	const fulUrl = `${URL}/search?q=${encodedQuery}&count=5`;
+	const fulUrl = `${URL}/search?q=${encodedQuery}&count=10`;
 	if (!query) return;
 
 	fetch(fulUrl)
@@ -79,12 +79,14 @@ const buildTweets = (tweets, nextPage) => {
 				</p>
 			</div>
 			`;
+
 		if (
 			tweet.extended_entities &&
 			tweet.extended_entities.media &&
 			tweet.extended_entities.media.length > 0
 		) {
 			twitterContentEl += buildImages(tweet.extended_entities.media);
+			twitterContentEl += buildVideo(tweet.extended_entities.media);
 		}
 
 		twitterContentEl += `
@@ -123,7 +125,35 @@ const buildImages = (mediaList) => {
 };
 
 // Build HTML for Tweets Video
-const buildVideo = (mediaList) => {};
+const buildVideo = (mediaList) => {
+	let videoContent = `<div class='tweets-images-container tweet-video-container'>`;
+	let videoExists = false;
+	mediaList.map((media) => {
+		if (media.type == "video" || media.type == "animated_gif") {
+			videoExists = true;
+			const video = media.video_info.variants.find(
+				(video) => video.content_type == "video/mp4",
+			);
+			const videoOptions = getVideoOptions(media.type);
+			videoContent += `
+            <video ${videoOptions} ">
+                <source src="${video.url}" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            `;
+		}
+	});
+	videoContent += `</div>`;
+	return videoExists ? videoContent : "";
+};
+
+const getVideoOptions = (mediaType) => {
+	if (mediaType == "animated_gif") {
+		return "loop autoplay";
+	} else {
+		return "controls";
+	}
+};
 
 // EventListener
 scrollToTopBtn.addEventListener("click", scrollToTop);
