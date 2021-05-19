@@ -13,6 +13,7 @@
 	--dark-Gray: #657786;
 	--light-Gray: #e1e8ed;
 	--white: #fff;
+	--red: red;
 	--space16: 16px;
 	--space20: 20px;
 	--space25: 25px;
@@ -101,6 +102,90 @@ p {
 	box-shadow: 1px 1px 3px 2px #657786;
 }
 /********** End Next Page **********/
+
+/*======  Start the Footer Section  ======*/
+
+.page__footer {
+	color: var(--white);
+	font-size: 1rem;
+	padding-top: var(--space20);
+	padding-bottom: var(--space20);
+	display: flex;
+	flex-direction: column-reverse;
+
+	justify-content: center;
+	align-items: center;
+	border: 1px solid var(--dark-Gray);
+}
+
+.page__footer:hover {
+	background: rgba(101, 119, 134, 0.07);
+	-moz-box-shadow: 1px 1px 3px 2px #657786;
+	-webkit-box-shadow: 1px 1px 3px 2px #657786;
+	box-shadow: 1px 1px 3px 2px #657786;
+	border: 1px solid #657786;
+}
+
+.page__footer__container {
+	width: 100%;
+	display: flex;
+	padding: 1rem;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.page__footer .footer__copyRight {
+	margin: 1rem 0;
+}
+
+.page__footer .fa-heart {
+	color: var(--red);
+	font-size: 1.2rem;
+}
+
+.page__footer a {
+	text-decoration: none;
+	color: var(--white);
+}
+
+.page__footer a.twitter,
+.page__footer a.name {
+	color: var(--blue);
+}
+
+.page__footer a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	color: var(--blue);
+}
+
+.page__footer .footer__socialMedia {
+	display: flex;
+}
+
+.page__footer .footer__socialMedia a {
+	margin: 8px;
+}
+
+.page__footer .footer__socialMedia .facebook:hover {
+	color: #3b5998;
+}
+
+.page__footer .footer__socialMedia .twitter:hover {
+	color: #1da1f2;
+}
+
+.page__footer .footer__socialMedia .instagram:hover {
+	color: #405de6;
+}
+
+.page__footer .footer__socialMedia .github:hover {
+	color: #ffd33d;
+}
+
+.page__footer .footer__socialMedia .linkedin:hover {
+	color: #2867b2;
+}
 
 /********** Start components **********/
 .padding20 {

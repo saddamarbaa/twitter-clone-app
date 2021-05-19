@@ -24,6 +24,14 @@
 	grid-template-rows: auto;
 }
 
+.login .login-wraper:hover {
+	background: rgba(101, 119, 134, 0.07);
+	-moz-box-shadow: 1px 1px 3px 2px #657786;
+	-webkit-box-shadow: 1px 1px 3px 2px #657786;
+	box-shadow: 1px 1px 3px 2px #657786;
+	border: 1px solid #657786;
+}
+
 @media (max-width: 380px) {
 	.login .login-wraper {
 		grid-template-columns: 280px;
