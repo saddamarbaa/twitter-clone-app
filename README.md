@@ -6,7 +6,7 @@
 #  <a href="https://saddamarbaa.github.io/twitter-clone-app/">GitHub PAGES DEMO </a>
 
 
-#  <a href="https://github.com/saddamarbaa/twitter-clone-api">SEE MY twitter-clone API REPO (TODO)</a>
+#  <a href="https://github.com/saddamarbaa/twitter-clone-api">SEE MY twitter-clone API REPO</a>
  
  
  # <a href="#">LIVE API(TODO)</a>
@@ -52,10 +52,12 @@
 
 
 # responsive on large screens(Home Page) 
-![image](https://user-images.githubusercontent.com/51326421/118637523-1b274000-b800-11eb-9d34-14a3665595d6.png)
+![image](https://user-images.githubusercontent.com/51326421/118805148-cc48db80-b8cf-11eb-8732-f4ba67191fcf.png)
 
 
-![image](https://user-images.githubusercontent.com/51326421/118638010-95f05b00-b800-11eb-9c79-d1c63554a8bc.png)
+
+![image](https://user-images.githubusercontent.com/51326421/118804868-6ceacb80-b8cf-11eb-8ca7-137de4091be9.png)
+
 
 
 
@@ -72,24 +74,17 @@
 
 
 
-# (Home page) (TODO)
-
-
-# (Next page) (TODO)
-
-
-
-
-
-# (Login Page) (TODO)
+# (Login Page) 
+![image](https://user-images.githubusercontent.com/51326421/118805387-129e3a80-b8d0-11eb-94dd-0027511bea53.png)
 
 
 
 
 
+# Register page 
 
+![image](https://user-images.githubusercontent.com/51326421/118805245-e7b3e680-b8cf-11eb-82f7-0a1cbedd769a.png)
 
-# Register page (TODO)
 
 
 
