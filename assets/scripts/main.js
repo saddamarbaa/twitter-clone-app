@@ -1,8 +1,11 @@
 /** @format */
 
+window.onload = () => updateNotifications();
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 const rootElement = document.documentElement;
-const URL = "http://localhost:3000/api/tweets";
+
+let API_URL = "http://localhost:3000";
+let URL = `${API_URL}/api/tweets`;
 let nextPageUrl = null;
 
 // Scroll to top logic
@@ -16,12 +19,6 @@ const scrollToTop = () => {
 
 // EventListener
 scrollToTopBtn.addEventListener("click", scrollToTop);
-
-// Random notifications
-const updateNotifications = () => {
-	const notifications = document.querySelector("#notifications");
-	notifications.dataset.progress = Math.floor(Math.random() * 20 + 1);
-};
 
 const onEnter = (event) => {
 	if (event.key === "Enter") {
@@ -48,7 +45,7 @@ const getTwitterData = (nextPageBoolean) => {
 				"");
 
 			buildTweets(data.result.statuses, nextPageBoolean);
-			updateNotifications();
+
 			saveNextPage(data.result.search_metadata);
 			nextPageButtonVisibility(data.result.search_metadata);
 		})
@@ -201,4 +198,10 @@ const getVideoOptions = (mediaType) => {
 	} else {
 		return "controls";
 	}
+};
+
+// Random notifications
+const updateNotifications = () => {
+	const notifications = document.querySelector("#notifications");
+	notifications.dataset.progress = Math.floor(Math.random() * 20 + 1);
 };
