@@ -31,6 +31,12 @@
 	color: var(--light-Gray);
 }
 
+@media (max-width: 992px) {
+	.grid-container .tweets-main-wrapper .tweets-home-container i {
+		display: none;
+	}
+}
+
 .grid-container .tweets-main-wrapper .tweets-search-container {
 	display: flex;
 	justify-content: center;

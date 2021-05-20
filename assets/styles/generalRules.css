@@ -67,9 +67,52 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+/* login out button */
+.sign-in-login {
+	margin-right: 10px;
+	position: absolute;
+	top: 7px;
+	right: 45px !important;
+	color: var(--blue);
+	padding: var(--space16);
+	cursor: pointer;
+	width: max-content;
+	font-size: 1.2rem;
+	z-index: 110;
+	background-color: transparent;
+	transition: var(--transition-duration);
+	-webkit-transition: var(--transition-duration);
+	-moz-transition: var(--transition-duration);
+	-ms-transition: var(--transition-duration);
+	-o-transition: var(--transition-duration);
+	border-radius: 0.25rem;
+	-webkit-border-radius: 0.25rem;
+	-moz-border-radius: 0.25rem;
+	-ms-border-radius: 0.25rem;
+	-o-border-radius: 0.25rem;
+}
+
+@media (max-width: 992px) {
+	.sign-in-login {
+		margin-right: 5px;
+		right: 15px !important;
+		padding-right: 10px;
+	}
+}
+
+.sign-in-login:hover {
+	background: rgba(101, 119, 134, 0.07);
+	-moz-box-shadow: 1px 1px 3px 2px #657786;
+	-webkit-box-shadow: 1px 1px 3px 2px #657786;
+	box-shadow: 1px 1px 3px 2px #657786;
+	border: 1px solid var(--blue);
+}
+
 /********** End global rules **********/
 
 /********** grid container **********/
+
 .grid-container {
 	display: flex;
 	background: var(--black);
