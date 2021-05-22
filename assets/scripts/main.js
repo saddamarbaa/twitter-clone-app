@@ -27,6 +27,7 @@ scrollToTopBtn.addEventListener("click", scrollToTop);
 
 const onEnter = (event) => {
 	if (event.key === "Enter") {
+		updateNotifications();
 		getTwitterData();
 	}
 };
@@ -46,6 +47,7 @@ const getTwitterData = (nextPageBoolean) => {
 			return response.json();
 		})
 		.then((data) => {
+			updateNotifications();
 			const query = (document.getElementById("user-search-input").value =
 				"");
 
