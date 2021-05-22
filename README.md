@@ -4,13 +4,13 @@
 # <a href="https://twitter-clone-saddam.netlify.app/">Live Demo </a>
  
 
-#  <a href="https://github.com/saddamarbaa/twitter-clone-api">SEE MY twitter-clone API REPO</a>
+# <a href="https://github.com/saddamarbaa/twitter-clone-api">SEE MY twitter-clone API REPO</a>
  
  
-## <a href="https://twitter-clone-app-saddam.herokuapp.com/">LIVE API</a>
+# <a href="https://twitter-clone-app-saddam.herokuapp.com/">LIVE API</a>
 
 
-##   Testing Email:      testverstion@gmail.com
+##   Testing Email:       testverstion@gmail.com
 ##   Testing Password:    12345test
 
 
@@ -52,7 +52,7 @@
 
 
 # responsive on large screens(Home Page) 
-![image](https://user-images.githubusercontent.com/51326421/118805148-cc48db80-b8cf-11eb-8732-f4ba67191fcf.png)
+![image](https://user-images.githubusercontent.com/51326421/119225798-3f508d00-bb30-11eb-8580-28ea22061bf9.png)
 
 
 
