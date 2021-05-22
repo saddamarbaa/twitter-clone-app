@@ -5,6 +5,11 @@ const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 const rootElement = document.documentElement;
 
 let API_URL = "http://localhost:3000";
+
+if (location.href.indexOf("netlify") != -1) {
+	API_URL = "https://twitter-clone-app-saddam.herokuapp.com";
+}
+
 let URL = `${API_URL}/api/tweets`;
 let nextPageUrl = null;
 

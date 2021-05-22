@@ -5,6 +5,10 @@ const loginForm = document.getElementById("loginForm");
 const Bearer = "Bearer " + localStorage.getItem("token");
 let API_URL = "http://localhost:3000";
 
+if (location.href.indexOf("netlify") != -1) {
+	API_URL = "https://twitter-clone-app-saddam.herokuapp.com";
+}
+
 /**
  * Event handler for a form  on submit event.
  * @param {SubmitEvent} event
