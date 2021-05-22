@@ -1,4 +1,4 @@
-#  twitter-clone
+#  Twitter Clone App 
 ==> Building Twitter Clone using Node.js and Vanilla javascript
 
 # <a href="https://twitter-clone-saddam.netlify.app/">Live Demo </a>
@@ -9,11 +9,13 @@
 #  <a href="https://github.com/saddamarbaa/twitter-clone-api">SEE MY twitter-clone API REPO</a>
  
  
- # <a href="#">LIVE API(TODO)</a>
+## <a href="https://twitter-clone-app-saddam.herokuapp.com/">LIVE API</a>
 
 
-#  Testing Email:      TODO
-#  Testing Password:    TODO
+##   Testing Email:      testverstion@gmail.com
+##   Testing Password:    12345test
+
+
 
 
 # Twitter Clone Software Requirement
