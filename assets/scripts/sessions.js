@@ -49,7 +49,7 @@ const checkIfLoggedIn = () => {
 			!location.href.includes("/login.html") &&
 			!location.href.includes("/register.html")
 		) {
-			location.href = "/login.html";
+			location.href = "/welcoming.html";
 		}
 	}
 };
