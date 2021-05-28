@@ -36,6 +36,7 @@ const checkIfLoggedIn = () => {
 	const currentToken = localStorage.getItem("token");
 	if (currentToken) {
 		if (
+			location.href.includes("/welcoming.html") ||
 			location.href.includes("/login.html") ||
 			location.href.includes("/register.html")
 		) {
@@ -58,7 +59,7 @@ const checkIfLoggedIn = () => {
 // and then redirect user to go login page for sigin in
 const LogOut = () => {
 	localStorage.removeItem("token");
-	location.href = "login.html";
+	location.href = "welcoming.html";
 };
 
 // load this one directly
