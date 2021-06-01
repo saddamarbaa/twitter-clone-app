@@ -1,14 +1,319 @@
 /** @format */
 
-/* overwrite login.css */
-.login .register-wraper {
-	grid-template-rows: 600px !important;
-	margin-top: 30px;
+:root {
+	--section-background: #0f0f11;
 }
 
-.login-inner-wraper label {
-	margin-bottom: var(--space20);
-	color: var(--blue) !important;
-	margin-bottom: 10px !important;
+.login {
+	background-color: var(--section-background);
+	color: var(--white);
+	width: 100vw;
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+.login .container form {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	min-height: 537px;
+	border: 1px solid var(--dark-Gray);
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+
+.login .container form:hover {
+	background: rgba(101, 119, 134, 0.07);
+	-moz-box-shadow: 1px 1px 3px 2px #657786;
+	-webkit-box-shadow: 1px 1px 3px 2px #657786;
+	box-shadow: 1px 1px 3px 2px hsl(207, 14%, 46%);
+	border: 1px solid #657786;
+	padding-bottom: 35px;
+}
+
+@media (max-width: 768px) {
+	.login .container form {
+		width: 400px;
+	}
+}
+
+@media (max-width: 578px) {
+	.login .container form {
+		width: 300px;
+	}
+}
+
+@media (max-width: 360px) {
+	.login .container form {
+		width: 270px;
+	}
+}
+
+.login .sgin-in-header {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 8px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	position: relative;
+}
+
+.login .sgin-in-header .fa-twitter {
+	color: var(--blue);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+}
+
+@media (max-width: 578px) {
+	.login .sgin-in-header .fa-twitter {
+		left: 20px;
+	}
+}
+
+.login .sgin-in-header input {
+	background-color: transparent;
+	min-width: 66px;
+	min-height: 32px;
+	padding: 10px 20px;
+	background: var(--blue);
+	color: var(--white);
+	border: none;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 400;
+	transition: var(--transition-duration);
+	-moz-transition: var(--transition-duration);
+	-ms-transition: var(--transition-duration);
+	-o-transition: var(--transition-duration);
+	-webkit-transition: var(--transition-duration);
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+
+.login .user-password {
+	margin-bottom: 20px;
+}
+
+.login .sgin-in-header input:hover {
+	background-color: var(--blue);
+}
+
+.login h2 {
+	margin-bottom: 30px;
+}
+
+@media (max-width: 578px) {
+	.login h2 {
+		font-size: 1.5rem;
+	}
+}
+
+.login .login-inner-wraper {
+	width: 100%;
+	padding: var(--space25);
+	color: var(--white);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.login .login-inner-wraper .user-name {
+	margin-top: var(--space20);
+}
+
+.login .login-inner-wraper input[type="text"],
+.login .login-inner-wraper input[type="password"],
+.login .login-inner-wraper input[type="email"] {
+	width: 100%;
+	color: var(--dark-Gray);
+	padding: var(--space16);
 	display: block;
+	width: 100%;
+	margin-bottom: var(--space20);
+	line-height: 1.5;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid var(--dark-Gray);
+	font-size: 1rem;
+	font-weight: 400;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+	border-radius: 0.25rem;
+	-webkit-border-radius: 0.25rem;
+	-moz-border-radius: 0.25rem;
+	-ms-border-radius: 0.25rem;
+	-o-border-radius: 0.25rem;
+	font-weight: bold;
+}
+
+.login .user-name input:focus,
+.login .user-name input:hover,
+.login .user-password input:focus,
+.login .user-password input:hover,
+.login .user-email input:focus,
+.login .user-email input:hover {
+	border: 2px solid var(--blue);
+}
+
+.login .info h3 {
+	font-size: 1.3rem;
+}
+
+.login .info p {
+	padding: 0 0 10px;
+	font-size: 14px;
+	color: var(--light-Gray);
+}
+
+.user-date-of-birth-container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 25px;
+}
+
+.day-container,
+.year-container {
+	flex-basis: 25%;
+}
+
+.month-container {
+	flex: 1;
+}
+
+@media (max-width: 578px) {
+	.day-container {
+		flex-basis: 22%;
+	}
+
+	.year-container {
+		flex-basis: 30%;
+	}
+
+	.month-container {
+		flex: 1;
+	}
+
+	.login .info h3 {
+		font-size: 20px !important;
+	}
+}
+
+.day-container {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* Reset Select */
+.select select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	outline: 0;
+	box-shadow: none;
+	border: 0 !important;
+	background-image: none;
+	background-color: white;
+	flex: 1;
+	padding: 0 0.5em;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: 700;
+	color: var(--dark-Gray) !important;
+	line-height: 1.3;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+/* Custom Select */
+.select {
+	position: relative;
+	display: flex;
+	width: 20em;
+	height: 3em;
+	line-height: 3;
+	background: var(--blue);
+	overflow: hidden;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+	border-radius: 0.25em;
+	-webkit-border-radius: 0.25em;
+	-moz-border-radius: 0.25em;
+	-ms-border-radius: 0.25em;
+	-o-border-radius: 0.25em;
+}
+
+/* Arrow */
+.select::after {
+	content: "\25BC";
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 1em;
+	cursor: pointer;
+	pointer-events: none;
+	color: var(--blue);
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+}
+
+@media (max-width: 578px) {
+	.select::after {
+		padding: 0;
+	}
+}
+
+@media (max-width: 578px) {
+}
+
+@media (max-width: 360px) {
+	.select::after {
+		display: none;
+	}
+}
+
+/* Hover and Focus style */
+.select select:hover,
+.select select:focus {
+	border: 1px solid var(--blue) !important;
+	box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+	outline: none;
+}
+
+/* Set options to normal weight */
+.select option {
+	font-weight: normal;
+	color: var(--dark-Gray) !important;
 }

@@ -26,7 +26,9 @@ window.onload = () => {
 		emailInput.style.transition = "0.5s";
 	}
 	if (registeredEmail) {
-		const newRegisterEmailInput = loginForm.registered;
+		const newRegisterEmailInput = document.querySelector(
+			".login-container #registered",
+		);
 		newRegisterEmailInput.style.display = "block";
 	}
 };

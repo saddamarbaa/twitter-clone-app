@@ -30,7 +30,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: purple;
 	height: 100%;
 	background: url("../img/lohp_en_1302x955.png") no-repeat center center/cover;
 }
@@ -87,10 +86,10 @@ body {
 	transition: 0.25;
 	font-size: 0.9375rem;
 	font-weight: 700;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	-ms-border-radius: 30px;
-	-o-border-radius: 30px;
+	-webkit-border-radius: ;
+	-moz-border-radius: ;
+	-ms-border-radius: ;
+	-o-border-radius: ;
 	-webkit-transition: 0.25;
 	-moz-transition: 0.25;
 	-ms-transition: 0.25;
@@ -100,11 +99,21 @@ body {
 .signup-btn {
 	background: #1da1f2;
 	color: #fff;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
 }
 
 .login-btn {
 	background: #000;
 	color: #1da1f2;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
 }
 
 .signup-btn:hover {
@@ -114,6 +123,7 @@ body {
 
 .login-btn:hover {
 	background: rgba(29, 161, 242, 0.1);
+	border: 1px solid rgb(14, 157, 223);
 }
 
 .footer {
@@ -187,8 +197,8 @@ body {
 	}
 
 	.footer {
-    padding-top: 30px;
-    padding-bottom: 30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 		position: relative;
 		min-height: 150px;
 	}

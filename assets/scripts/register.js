@@ -19,7 +19,7 @@ registerForm.addEventListener("submit", (event) => {
 	const user = document.getElementById("registerForm");
 	const payload = {
 		firstName: user.firstName.value,
-		lastName: user.lastName.value,
+		// lastName: user.lastName.value,
 		email: user.email.value,
 		password: user.password.value,
 	};

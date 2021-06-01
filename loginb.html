@@ -1,0 +1,121 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- meta tag  -->
+		<meta charset="UTF-8" />
+
+		<!-- SEO - Search Engine  meta tags -->
+		<meta
+			name="description"
+			content="Twitter Clone build With Node.js and Vanilla Javascript "
+		/>
+		<meta name="keywords" content="HTML, CSS, JavaScript Node.Js " />
+		<meta name="author" content="Saddam Arbaa" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- First Mobile Viewport  -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Google Web Fonts link  -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Normalize.css to makes browsers render all elements more consistently and in line with modern standards.  -->
+		<link rel="stylesheet" href="./assets/styles/normalize.css" />
+
+		<!-- font Awesome Library  -->
+		<link rel="stylesheet" href="./assets/styles/all.min.css" />
+
+		<!-- general Rules.css css file  -->
+		<link rel="stylesheet" href="./assets/styles/generalRules.css" />
+
+		<!-- main Tweets.css css file  -->
+		<link rel="stylesheet" href="./assets/styles/mainTweets.css" />
+
+		<!-- right Sidebar css file  -->
+		<link rel="stylesheet" href="./assets/styles/rightSidebar.css" />
+
+		<!-- left Sidebar css file  -->
+		<link rel="stylesheet" href="./assets/styles/leftSidebar.css" />
+
+		<!-- Login css file  -->
+		<link rel="stylesheet" href="./assets/styles/login.css" />
+
+		<!-- sessions.Js file -->
+		<!-- load this one directly -->
+		<script src="./assets/scripts/sessions.js"></script>
+
+		<!-- login.Js file -->
+		<script src="./assets/scripts/login.js" defer></script>
+
+		<!-- title -->
+		<title>Login Page</title>
+	</head>
+	<body>
+		<div class="login">
+			<div class="container">
+				<div class="login-wraper">
+					<form
+						id="loginForm"
+						class="login-inner-wraper"
+						name="loginform"
+						autocomplete="of"
+					>
+						<div>
+							<h2>Sign In</h2>
+							<i class="fab fa-twitter fa-2x"></i>
+						</div>
+						<div class="user-name user-email">
+							<label for="registered"></label>
+							<input
+								type="text"
+								id="registered"
+								name="registered"
+								value="Successfully Registered"
+								placeholder="Successfully Registered"
+								autocomplete="off"
+								disabled
+							/>
+						</div>
+						<div class="user-name user-email">
+							<label for="email"></label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="User Email:"
+								autocomplete="off"
+								required
+							/>
+						</div>
+						<div class="user-password">
+							<label for="password"></label>
+							<input
+								type="password"
+								placeholder="Password:"
+								id="password"
+								name="password"
+								required
+							/>
+						</div>
+						<div class="buttons">
+							<input type="submit" value="Login" id="login" />
+							<input
+								type="submit"
+								value="Register"
+								id="register-inside-login"
+								onclick="redirectToRegisterPage()"
+							/>
+							<input type="reset" value="Reset" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
