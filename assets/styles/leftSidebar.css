@@ -93,10 +93,10 @@
 	left: 4px;
 	top: -20px;
 	border-radius: var(--space50);
-	-webkit-border-radius: ;
-	-moz-border-radius: ;
-	-ms-border-radius: ;
-	-o-border-radius: ;
+	-webkit-border-radius: var(--space50);
+	-moz-border-radius: var(--space50);
+	-ms-border-radius: var(--space50);
+	-o-border-radius: var(--space50);
 }
 
 .grid-container .navigation-leftSidebar-wrapper .side-icon.tweet {

@@ -37,6 +37,9 @@
 		<!-- main Tweets.css css file  -->
 		<link rel="stylesheet" href="./assets/styles/mainTweets.css" />
 
+		<!-- Tweet css file  -->
+		<link rel="stylesheet" href="./assets/styles/tweet.css" />
+
 		<!-- right Sidebar css file  -->
 		<link rel="stylesheet" href="./assets/styles/rightSidebar.css" />
 
@@ -49,6 +52,9 @@
 
 		<!-- Main Js file  -->
 		<script src="./assets/scripts/main.js" defer></script>
+
+		<!-- Tweet Js file  -->
+		<script src="./assets/scripts/tweet.js" defer></script>
 
 		<!-- moment.js cdn link  -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
@@ -119,9 +125,9 @@
 						<span>More</span>
 					</div>
 
-					<div class="tweet side-icon"><span>Tweet</span></div>
+					<div class="tweet side-icon" id="myBtn"><span>Tweet</span></div>
 					<div class="add side-icon">
-						<i class="fas fa-plus-circle"></i>
+						<i class="fas fa-plus-circle" id ="seconClosingdBtn"></i>
 					</div>
 				</div>
 				<!-- End left sidebar -->
@@ -405,5 +411,62 @@
 			<i class="fas fa-angle-double-up"> </i>
 		</button>
 		<!-- End Scroll top button -->
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div class="close-btn-continer">
+					<span class="close" id="closeSpan" title="close">&times;</span>
+				</div>
+
+				<div class="form-container">
+					<form
+						id="newPostForm"
+						action="myFormAction"
+						method="post"
+						autocomplete="off"
+					>
+						<div class="post-content-container">
+							<textarea
+								name="post-content"
+								id="form-post-content"
+								placeholder="What's happening?"
+								required
+							></textarea>
+						</div>
+
+						<div class="form-footer-wrapper">
+							<div class="post-image-Container">
+								<label for="form-post-image"></label>
+								<input
+									type="file"
+									name="post-image"
+									id="form-post-image"
+									accept="image/*"
+								/>
+							</div>
+							<div class="post-button-container">
+								<button class="btn-no-styles" type="submit">
+									<i
+										class="fas fa-plus-circle"
+										title="Add"
+										onclick="submitNewPost()"
+									></i>
+								</button>
+
+								<button
+									type="submit"
+									id="form-post-submit"
+									onclick="submitNewPost()"
+								>
+									Tweet
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

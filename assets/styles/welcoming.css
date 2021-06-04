@@ -86,10 +86,10 @@ body {
 	transition: 0.25;
 	font-size: 0.9375rem;
 	font-weight: 700;
-	-webkit-border-radius: ;
-	-moz-border-radius: ;
-	-ms-border-radius: ;
-	-o-border-radius: ;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
 	-webkit-transition: 0.25;
 	-moz-transition: 0.25;
 	-ms-transition: 0.25;
