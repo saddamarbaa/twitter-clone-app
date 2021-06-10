@@ -1,26 +1,55 @@
 #  Twitter Clone App 
-==> Building Twitter Clone using Node.js and Vanilla javascript
 
-# <a href="https://twitter-clone-saddam.netlify.app/">Live Demo </a>
+Twitter Clone App built by the power of JavaScript and Node js (a mobile-friendly) 
+
+
+# Table of contents
+* [Author](#Author)
+* [Demo](#Demo)
+* [Technologies](#Technologies)
+* [Contributing](#Contributing)
+* [Features](#Features)
+* [Status](#status)
+* [Inspiration](#inspiration)
+* [Support](#Support)
+* [Environment Variables](#Environment)
+* [Feedback](#Feedback)
+* [Screenshots](#Screenshots)
+
+
  
+# Author
 
-# <a href="https://github.com/saddamarbaa/twitter-clone-api">SEE MY twitter-clone API REPO</a>
- 
- 
-# <a href="https://twitter-clone-app-saddam.herokuapp.com/">LIVE API</a>
+- [@Saddam Arbaa](https://github.com/saddamarbaa)
 
 
-##   Testing Email:       testverstion@gmail.com
-##   Testing Password:    12345test
+#  Technologies
+
+**Client:**  
+
+* Html 
+* Css 
+* JavaScript 
+
+**Server:** 
+* Node.js
+* Express
+* MongoDB 
+* JSON Web Token (JWT)
 
 
 
+# Demo
+
+* <a href="https://twitter-clone-saddam.netlify.app/">Live Demo </a>
+* <a href="https://github.com/saddamarbaa/twitter-clone-api"> Back-End API REPO</a>
+* <a href="https://twitter-clone-app-saddam.herokuapp.com/">LIVE API</a>
+* Testing Email:      testverstion@gmail.com
+* Testing Password:    12345test
 
 # Twitter Clone Software Requirement
 
-##  <a href="https://docs.google.com/document/d/1yplI2Vj48vTDFZaDEuXqQQyjqGCVGYa_hVvIWOwxRPc/edit?usp=sharin">Software Requirement Link </a>
-
-
+* <a href="https://docs.google.com/document/d/1yplI2Vj48vTDFZaDEuXqQQyjqGCVGYa_hVvIWOwxRPc/edit?usp=sharin">Software Requirement Link </a>
 
 
 ![image](https://user-images.githubusercontent.com/51326421/117193446-11b7d400-ae0d-11eb-91ce-4e5de00501ef.png)
@@ -36,25 +65,78 @@
 
 
 # User Stories(Swim Lane )
-##  <a href="https://app.diagrams.net/#G18vgiEZPhBq5R7tyXKmE9cJReen30lvT3"> User Stories Link </a>
+* <a href="https://app.diagrams.net/#G18vgiEZPhBq5R7tyXKmE9cJReen30lvT3"> User Stories Link </a>
 ![image](https://user-images.githubusercontent.com/51326421/117197278-d1a72000-ae11-11eb-8137-32e385b20a92.png)
 
 
 # Twitter Clone: Wireframe 
-##  <a href="https://app.diagrams.net/#G1rC62Py6RQE0HrLCQAtIeGhmjKwcM0xJ7"> Wireframe Link </a>
+* <a href="https://app.diagrams.net/#G1rC62Py6RQE0HrLCQAtIeGhmjKwcM0xJ7"> Wireframe Link </a>
 
 ![image](https://user-images.githubusercontent.com/51326421/117250912-1eb8df80-ae6e-11eb-8536-0532181df621.png)
 
 
 # Twitter Clone: Mockup 
-##  <a href="https://www.figma.com/file/KaZX9z3aqQDHwPSWPK4bSo/Twitter?node-id=0%3A1"> Figma Link </a>
- 
+* <a href="https://www.figma.com/file/KaZX9z3aqQDHwPSWPK4bSo/Twitter?node-id=0%3A1"> Figma Link </a>
 
-# responsive on all screens(Welcoming Page) 
+
+
+# Features
+
+-  Add a new tweet
+-  Search tweet
+-  View top trends and searched
+-   Complete user authentication 
+
+# Status
+The project is complete now in vanilla javascript I would love to convert to  React Js,  Firebase, and Next.js  
+
+
+ # Contributing
+
+Contributions are always welcome!
+
+# Support
+
+For support, email saddamarbaas@gmail.com.
+
+
+# Feedback
+
+If you have any feedback, please reach out to me at saddamarbaas@gmail.com
+
+  
+Twitter
+https://twitter.com/ArbaaSaddam/
+
+Linkedin.
+https://www.linkedin.com/in/saddamarbaa/
+
+Github
+https://github.com/saddamarbaa
+
+Instagram
+https://www.instagram.com/saddam.dev/
+
+Facebook
+https://www.facebook.com/saddam.arbaa
+
+
+
+# Inspiration
+Build By Saddam Arbaa Project inspired by [Twitter] https://twitter.com/
+
+
+# Screenshots
+
+* (Welcoming Page)  responsive on all screens
 ![image](https://user-images.githubusercontent.com/51326421/120041084-dedeb580-c031-11eb-839c-efe2e5419d72.png)
 
-# responsive on large screens(Home Page) 
+* (Home Page)  responsive on large screens
 ![image](https://user-images.githubusercontent.com/51326421/119225798-3f508d00-bb30-11eb-8580-28ea22061bf9.png)
+
+
+![image](https://user-images.githubusercontent.com/51326421/121557946-65869000-ca3f-11eb-8097-ea6c861eab81.png)
+
 
 
 
@@ -63,12 +145,12 @@
 
 
 
-# responsive on mobile and tablet screens 
+* responsive on mobile and tablet screens 
 
 ![image](https://user-images.githubusercontent.com/51326421/118638206-c7692680-b800-11eb-8734-cedbb670f6bf.png)
 
 
-# responsive on small screens
+* responsive on small screens
 
 ![image](https://user-images.githubusercontent.com/51326421/118638285-dfd94100-b800-11eb-82fe-4b8a288edd51.png)
 
@@ -76,19 +158,21 @@
 
 
 
-# (Login Page) 
-![image](https://user-images.githubusercontent.com/51326421/118805387-129e3a80-b8d0-11eb-94dd-0027511bea53.png)
+* Log in Page
+![image](https://user-images.githubusercontent.com/51326421/121557088-a5994300-ca3e-11eb-9f0b-3b45b2787057.png)
 
-
-
-
-
-# Register page 
-
-![image](https://user-images.githubusercontent.com/51326421/118805245-e7b3e680-b8cf-11eb-82f7-0a1cbedd769a.png)
 
 
 ![image](https://user-images.githubusercontent.com/51326421/119062771-bf2c0980-ba01-11eb-93e1-0947386b0984.png)
+
+
+
+
+
+
+*  Sign in page 
+![image](https://user-images.githubusercontent.com/51326421/121556966-8ac6ce80-ca3e-11eb-87a1-df40be9132db.png)
+
 
 
 
