@@ -127,7 +127,7 @@
 
 					<div class="tweet side-icon" id="myBtn"><span>Tweet</span></div>
 					<div class="add side-icon">
-						<i class="fas fa-plus-circle" id ="seconClosingdBtn"></i>
+						<i class="fas fa-plus-circle" id="secondClosingdBtn"></i>
 					</div>
 				</div>
 				<!-- End left sidebar -->
@@ -192,18 +192,21 @@
 								<img
 									src="./assets/img/w-removebg-preview.png"
 									alt="img"
+									loading="lazy"
 								/>
 							</div>
 							<div class="img">
 								<img
 									src="./assets/img/ww-removebg-preview.png"
 									alt="img"
+									loading="lazy"
 								/>
 							</div>
 							<div class="img">
 								<img
 									src="./assets/img/profle-removebg-preview.png"
 									alt="img"
+									loading="lazy"
 								/>
 							</div>
 						</div>
@@ -438,7 +441,7 @@
 
 						<div class="form-footer-wrapper">
 							<div class="post-image-Container">
-								<label for="form-post-image"></label>
+								<label for="form-post-image">Choose Image</label>
 								<input
 									type="file"
 									name="post-image"
@@ -451,14 +454,14 @@
 									<i
 										class="fas fa-plus-circle"
 										title="Add"
-										onclick="submitNewPost()"
+										onclick="submitNewTweet()"
 									></i>
 								</button>
 
 								<button
 									type="submit"
 									id="form-post-submit"
-									onclick="submitNewPost()"
+									onclick="submitNewTweet()"
 								>
 									Tweet
 								</button>

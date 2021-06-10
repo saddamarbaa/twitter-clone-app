@@ -1,5 +1,8 @@
 /** @format */
 
+// Call function whe the page is loaded
+window.onload = () => fetchTweets();
+
 const newPostForm = document.getElementById("newPostForm");
 
 // Bearer Token
@@ -14,7 +17,7 @@ const modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 const btn = document.getElementById("myBtn");
-const secondClosingdBtn = document.getElementById("seconClosingdBtn");
+const secondClosingdBtn = document.getElementById("secondClosingdBtn");
 
 // Get the <span> element that closes the modal
 const closeSpan = document.getElementById("closeSpan");
@@ -40,45 +43,68 @@ window.onclick = function (event) {
 
 // EventListeners
 newPostForm.addEventListener("submit", (event) => {
-	
 	event.preventDefault();
+	// // Build FormData
+	// let formData = new FormData();
+	// const content = document.getElementById("form-post-content").value;
+	// const fileInputElement = document.getElementById("form-post-image");
+	// formData.append("tweetImage", fileInputElement.files[0]);
+	// formData.append("content", content);
+	// submitNewTweet(formData);
 
-	// Build FormData
-	let formData = new FormData(); // Currently empty
-
-	const content = document.getElementById("form-post-content").value;
-	const fileInputElement = document.getElementById("form-post-image");
-	formData.append("tweetImage", fileInputElement.files[0]);
-	formData.append("content", content);
-
-	// Call submitNewPost() function
-	submitNewPost(formData);
+	submitNewTweet(true);
 });
 
-// Functions
-const submitNewPost = (formData) => {
-	// POST request using fetch()
-	fetch(API_URL + "/api/tweet", {
-		method: "POST",
-		body: formData,
-		headers: {
-			Authorization: Bearer,
-		},
-	})
-		.then((response) => {
-			if (response.ok) {
-				return response.json();
-			} else {
-				// throw new Error(response.statusText);
-				throw new Error("Something went wrong");
-			}
-		})
-		.then((data) => {
-			// location.href = "/login.html";
-
-			document.getElementById("form-post-content").value = "";
-		})
-		.catch((error) => {});
+// function to get the tweets
+const fetchTweets = () => {
+	// fetch(API_URL + "/api/tweet", {
+	// 	method: "GET",
+	// 	headers: {
+	// 		"Content-Type": "application/json",
+	// 		Accept: "application/json",
+	// 		Authorization: Bearer,
+	// 	},
+	// })
+	// 	.then((response) => {
+	// 		if (response.ok) {
+	// 			return response.json();
+	// 		} else {
+	// 			throw new Error("Something went wrong");
+	// 		}
+	// 	})
+	// 	.then((data) => {
+	// 		// buildPosts(data.result.tweets);
+	// 		console.log(data.result.tweets);
+	// 	})
+	// 	.catch((error) => {
+	// 		console.log("Fetch Error :-S", error);
+	// 	});
 };
 
-console
+const submitNewTweet = (formData) => {
+	alert("Your Tweet was sent.");
+	modal.style.display = "none";
+	document.getElementById("form-post-content").value = "";
+
+	// fetch(API_URL + "/api/tweet", {
+	// 	method: "POST",
+	// 	body: formData,
+	// 	headers: {
+	// 		Authorization: Bearer,
+	// 	},
+	// })
+	// 	.then((response) => {
+	// 		if (response.ok) {
+	// 			return response.json();
+	// 		} else {
+	// 			throw new Error("Something went wrong");
+	// 		}
+	// 	})
+	// 	.then((data) => {
+	// 		// location.href = "/login.html";
+	// 		alert("Your Tweet was sent.");
+	// 		modal.style.display = "block";
+	// 		document.getElementById("form-post-content").value = "";
+	// 	})
+	// 	.catch((error) => {});
+};

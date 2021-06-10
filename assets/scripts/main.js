@@ -10,7 +10,7 @@ if (location.href.indexOf("netlify") != -1) {
 	API_URL = "https://twitter-clone-app-saddam.herokuapp.com";
 }
 
-let URL = `${API_URL}/api/tweets`;
+let URL = `${API_URL}/api/search`;
 let nextPageUrl = null;
 
 // Scroll to top logic
@@ -115,12 +115,10 @@ const buildTweets = (tweets, nextPageBoolean = false) => {
 					<div class='name'> ${name}</div>
 					<div class='twitter-name'>@${twitterName}</div>
 				</div>
-
 				<div class='tweets-user-info-add'>
 					<i class='fas fa-ellipsis-h' title='More'></i>
 				</div>
 			</div>
-
 			<div class='tweets-text-container'>
 				<p>
 				${tweetTextContent}
@@ -168,7 +166,12 @@ const buildImages = (mediaList) => {
 		if (media.type == "photo") {
 			imagesExist = true;
 			imagesContent += `<div class='img'>
-				<img src='${media.media_url_https}' />
+				<img src='${media.media_url_https}'
+				 
+				alt="img"
+				loading="lazy"
+				 />
+				
 			</div>`;
 		}
 	});
