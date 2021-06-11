@@ -12,8 +12,11 @@ Twitter Clone App built by the power of JavaScript and Node js (a mobile-friendl
 * [Status](#status)
 * [Inspiration](#inspiration)
 * [Support](#Support)
-* [Environment Variables](#Environment)
 * [Feedback](#Feedback)
+* [Software Requirement](#Software_Requirement)
+* [Wireframe ](#TWireframe)
+* [Mockup - Figma Link ](#Mockup)
+* [User Stories(Swim Lane )](#SwimLane)
 * [Screenshots](#Screenshots)
 
 
@@ -41,16 +44,16 @@ Twitter Clone App built by the power of JavaScript and Node js (a mobile-friendl
 
 
 # Demo
-### * <a href="https://twitter-clone-saddam.netlify.app/">Live Demo </a>
-### <a href="https://www.loom.com/share/545edc779b964d2095f9dd5a5d22a0b4"> Live Video Demo </a>
-### * <a href="https://github.com/saddamarbaa/twitter-clone-api"> Back-End API REPO</a>
-### * <a href="https://twitter-clone-app-saddam.herokuapp.com/">LIVE API Demo</a>
-### *  Testing Email:      testverstion@gmail.com
-### *  Testing Password:    12345test
+###  <a href="https://twitter-clone-saddam.netlify.app/">Live Demo </a>
+###  <a href="https://www.loom.com/share/545edc779b964d2095f9dd5a5d22a0b4"> Live Video Demo </a>
+###  <a href="https://github.com/saddamarbaa/twitter-clone-api"> Back-End API REPO</a>
+###  <a href="https://twitter-clone-app-saddam.herokuapp.com/">LIVE API Demo</a>
+####   Testing Email:      testverstion@gmail.com
+####   Testing Password:    12345test
 
-# Twitter Clone Software Requirement
+# Software_Requirement
 
-### *  <a href="https://docs.google.com/document/d/1yplI2Vj48vTDFZaDEuXqQQyjqGCVGYa_hVvIWOwxRPc/edit?usp=sharin">Software Requirement Link </a>
+###  <a href="https://docs.google.com/document/d/1yplI2Vj48vTDFZaDEuXqQQyjqGCVGYa_hVvIWOwxRPc/edit?usp=sharin">Software Requirement Link </a>
 
 
 ![image](https://user-images.githubusercontent.com/51326421/117193446-11b7d400-ae0d-11eb-91ce-4e5de00501ef.png)
@@ -65,18 +68,18 @@ Twitter Clone App built by the power of JavaScript and Node js (a mobile-friendl
 
 
 
-# User Stories(Swim Lane )
-### *  <a href="https://app.diagrams.net/#G18vgiEZPhBq5R7tyXKmE9cJReen30lvT3"> User Stories Link </a>
+# SwimLane
+###   <a href="https://app.diagrams.net/#G18vgiEZPhBq5R7tyXKmE9cJReen30lvT3"> User Stories Link </a>
 ![image](https://user-images.githubusercontent.com/51326421/117197278-d1a72000-ae11-11eb-8137-32e385b20a92.png)
 
 
-# Twitter Clone: Wireframe 
-### *  <a href="https://app.diagrams.net/#G1rC62Py6RQE0HrLCQAtIeGhmjKwcM0xJ7"> Wireframe Link </a>
+# TWireframe 
+###   <a href="https://app.diagrams.net/#G1rC62Py6RQE0HrLCQAtIeGhmjKwcM0xJ7"> Wireframe Link </a>
 
 ![image](https://user-images.githubusercontent.com/51326421/117250912-1eb8df80-ae6e-11eb-8536-0532181df621.png)
 
 
-# Twitter Clone: Mockup 
+# Mockup 
 ##  <a href="https://www.figma.com/file/KaZX9z3aqQDHwPSWPK4bSo/Twitter?node-id=0%3A1"> Figma Link </a>
 
 
@@ -144,7 +147,8 @@ Build By Saddam Arbaa Project inspired by [Twitter] https://twitter.com/
 
 
 
-![image](https://user-images.githubusercontent.com/51326421/119062771-bf2c0980-ba01-11eb-93e1-0947386b0984.png)
+![image](https://user-images.githubusercontent.com/51326421/121612800-562a3580-ca85-11eb-91f1-450af5259953.png)
+
 
 
 ##  Responsive on large screens - Home Page 
