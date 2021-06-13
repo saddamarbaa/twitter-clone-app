@@ -89,7 +89,6 @@ Twitter Clone App built by the power of JavaScript and Node js (a mobile-friendl
 -  Add a new tweet
 -  Search tweet
 -  View top trends and searched
--  Complete user authentication 
 -  Used Twiter API to get each tweet ands shows for the user on search
 
 # Status
